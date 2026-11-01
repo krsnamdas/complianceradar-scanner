@@ -1,0 +1,417 @@
+scanner_settings:
+  default_active_jurisdictions:
+    - "UAE"
+    - "KSA"
+  scan_interval_minutes: 360
+  user_agent: "ComplianceRadar-Scanner/2.1 (+https://complianceradar.local; Enterprise Regulatory Intelligence)"
+  request_timeout_seconds: 15
+  max_items_per_query: 8
+
+hierarchy_taxonomy:
+  regions:
+    - "MENAT"
+    - "GCC"
+    - "Levant & North Africa"
+    - "Sub-Saharan Africa (South Africa)"
+  sectors:
+    - "Banking & Central Banking"
+    - "Virtual Assets, Crypto & Blockchain"
+    - "Capital Markets & Wealth Management"
+    - "Insurance & Takaful"
+    - "Payments, Open Banking & FinTech"
+    - "Cybersecurity & Critical Infrastructure"
+    - "Data Privacy, AI & Cloud Computing"
+    - "Telecommunications & Digital Government"
+    - "Cross-Sector / National Legislation"
+  regulation_standard_types:
+    - "Regulation"
+    - "Standard"
+    - "Framework"
+    - "Circular"
+    - "Rulebook"
+    - "Guideline"
+    - "Law / Federal Decree"
+    - "Directive / Joint Standard"
+    - "Notice / Consultation"
+
+domain_taxonomy:
+  core_technology:
+    - "Artificial Intelligence (AI)"
+    - "Machine Learning (ML)"
+    - "Emerging Tech"
+    - "Blockchain"
+    - "Quantum Computing"
+    - "Cybersecurity"
+    - "Data Privacy"
+    - "Cloud Computing"
+    - "Digital Assets"
+  financial_and_operational:
+    - "Central Banking"
+    - "Fintech"
+    - "Open Banking"
+    - "Open Finance"
+    - "Payments"
+    - "Crypto/Virtual Assets"
+    - "Digital Currency (CBDC)"
+    - "Operational Resilience"
+    - "Disaster Recovery (DR)"
+    - "Business Continuity (BCM)"
+    - "Operational Risk"
+    - "Third-Party Governance"
+
+jurisdictions:
+  UAE:
+    name: "United Arab Emirates"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: true
+    legal_instrument_terms:
+      - "UAE"
+      - "United Arab Emirates"
+      - "Federal Decree-Law"
+      - "Cabinet Resolution"
+      - "Circular"
+      - "Regulation"
+      - "Rulebook"
+      - "Framework"
+      - "Standard"
+      - "Guideline"
+      - "Notice"
+      - "Official Gazette"
+    seed_authorities:
+      - code: "CBUAE"
+        name: "Central Bank of the UAE (CBUAE)"
+        portal_url: "https://www.centralbank.ae/en/laws-and-regulations/"
+        sector: "Banking & Central Banking"
+        regulation_standard: "CBUAE Rulebook, Payment Token Regulation, Open Finance, Operational Resilience"
+      - code: "CBUAE-RULEBOOK"
+        name: "Central Bank of the UAE — Official Rulebook Portal"
+        portal_url: "https://rulebook.centralbank.ae/"
+        sector: "Payments, Open Banking & FinTech"
+        regulation_standard: "Model Management Standards (MMS), Open Finance Regulation, Operational Risk"
+      - code: "VARA"
+        name: "Virtual Assets Regulatory Authority (VARA)"
+        portal_url: "https://rulebook.vara.ae/"
+        sector: "Virtual Assets, Crypto & Blockchain"
+        regulation_standard: "VARA Technology & Information Rulebook (Digital Operational Resilience)"
+      - code: "DFSA"
+        name: "Dubai Financial Services Authority (DFSA - DIFC)"
+        portal_url: "https://www.dfsa.ae/news"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "DFSA Crypto Token Regime, Cyber Risk Management, AI & Tech Governance"
+      - code: "ADGM-FSRA"
+        name: "Financial Services Regulatory Authority (FSRA - ADGM)"
+        portal_url: "https://www.adgm.com/media/announcements"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "ADGM Cyber Risk Management Framework, Virtual Asset Framework"
+      - code: "TDRA"
+        name: "Telecommunications and Digital Government Regulatory Authority (TDRA)"
+        portal_url: "https://tdra.gov.ae/en/Laws-and-Regulations"
+        sector: "Telecommunications & Digital Government"
+        regulation_standard: "UAE Digital Trust, Cloud & IoT Regulatory Policy"
+      - code: "CSC-UAE"
+        name: "UAE Cyber Security Council"
+        portal_url: "https://csc.gov.ae/"
+        sector: "Cybersecurity & Critical Infrastructure"
+        regulation_standard: "UAE Information Assurance Standards (IAS v2), National Encryption & Quantum Policy"
+      - code: "DESC"
+        name: "Dubai Electronic Security Center (DESC)"
+        portal_url: "https://www.desc.gov.ae/regulations/"
+        sector: "Cybersecurity & Critical Infrastructure"
+        regulation_standard: "Dubai Information Security Regulation (ISR), Cloud & AI Security Standards"
+      - code: "UAE-DO"
+        name: "UAE Data Office"
+        portal_url: "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "UAE Federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021)"
+      - code: "DIFC-DP"
+        name: "DIFC Commissioner of Data Protection"
+        portal_url: "https://www.difc.ae/business/registrars-and-commissioners/commissioner-of-data-protection"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "DIFC Data Protection Law Regulation 10 (Autonomous & AI Systems)"
+      - code: "SCA-CMA"
+        name: "Securities and Commodities Authority / Capital Market Authority (UAE)"
+        portal_url: "https://www.sca.gov.ae/en/regulations.aspx"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "UAE Onshore Securities, FinTech & Virtual Asset Regulations"
+    search_queries:
+      - '"CBUAE" OR "Central Bank of the UAE" (regulation OR circular OR framework OR resilience OR AI OR token OR cyber)'
+      - '"VARA" Dubai ("Virtual Assets" OR rulebook OR compliance OR resilience OR custody)'
+      - '"DFSA" OR "DIFC" (regulation OR "crypto token" OR cybersecurity OR "data protection" OR AI)'
+      - '"ADGM" OR "FSRA" (regulation OR framework OR "cyber risk" OR "virtual assets" OR "operational resilience")'
+      - '"TDRA" OR "UAE Cyber Security Council" OR "DESC" OR "UAE Data Office" (regulation OR standard OR PDPL OR AI OR cloud OR quantum)'
+      - '"UAE" ("Federal Decree-Law" OR "Cabinet Resolution") (AI OR cybersecurity OR data OR crypto OR fintech OR "operational risk" OR "open finance")'
+
+  KSA:
+    name: "Kingdom of Saudi Arabia"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: true
+    legal_instrument_terms:
+      - "KSA"
+      - "Saudi Arabia"
+      - "Kingdom of Saudi Arabia"
+      - "Royal Decree"
+      - "Council of Ministers Resolution"
+      - "Ministerial Decision"
+      - "Circular"
+      - "Controls"
+      - "Framework"
+      - "Regulation"
+      - "Rulebook"
+      - "Guideline"
+      - "Umm Al-Qura Gazette"
+    seed_authorities:
+      - code: "SAMA"
+        name: "Saudi Central Bank (SAMA)"
+        portal_url: "https://rulebook.sama.gov.sa/en"
+        sector: "Banking & Central Banking"
+        regulation_standard: "SAMA Cyber Security Framework (CSF), BCM Framework, IT Governance & Cloud Controls"
+      - code: "SAMA-OB"
+        name: "Saudi Central Bank (SAMA) — Open Banking & FinTech Saudi"
+        portal_url: "https://www.sama.gov.sa/en-US/Laws/Pages/default.aspx"
+        sector: "Payments, Open Banking & FinTech"
+        regulation_standard: "SAMA Open Banking Framework (AISP/PISP), Payment Services Provider Regulations (PSPR)"
+      - code: "NCA"
+        name: "National Cybersecurity Authority (NCA)"
+        portal_url: "https://nca.gov.sa/en/regulatory-documents/"
+        sector: "Cybersecurity & Critical Infrastructure"
+        regulation_standard: "Essential Cybersecurity Controls (ECC-2:2024), Cloud Cybersecurity Controls (CCC), CSCC, OTCC"
+      - code: "SDAIA"
+        name: "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)"
+        portal_url: "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "KSA Personal Data Protection Law (PDPL), Cross-Border Data Transfer Rules, Generative AI & AI Ethics Principles"
+      - code: "CST"
+        name: "Communications, Space and Technology Commission (CST)"
+        portal_url: "https://www.cst.gov.sa/en/RulesandSystems/RegulatoryDocuments/Pages/default.aspx"
+        sector: "Telecommunications & Digital Government"
+        regulation_standard: "Data Center Services Regulations, Cloud Computing Regulatory Framework (CCRF), IoT & Emerging Tech"
+      - code: "CMA-KSA"
+        name: "Capital Market Authority (CMA)"
+        portal_url: "https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "CMA Cybersecurity Guidelines for Capital Market Institutions, FinTech Lab & Robo-Advisory Rules"
+      - code: "DGA"
+        name: "Digital Government Authority (DGA)"
+        portal_url: "https://dga.gov.sa/en/regulations"
+        sector: "Telecommunications & Digital Government"
+        regulation_standard: "Digital Government Regulatory Framework, National Enterprise Architecture & Cloud-First Policy"
+      - code: "IA-KSA"
+        name: "Insurance Authority (IA — Saudi Arabia)"
+        portal_url: "https://ia.gov.sa/"
+        sector: "Insurance & Takaful"
+        regulation_standard: "Saudi Insurance Sector Cybersecurity, InsurTech & Operational Risk Regulations"
+      - code: "ZATCA"
+        name: "Zakat, Tax and Customs Authority (ZATCA)"
+        portal_url: "https://zatca.gov.sa/en/RulesRegulations/Pages/default.aspx"
+        sector: "Payments, Open Banking & FinTech"
+        regulation_standard: "FATOORA E-Invoicing Phase 2 API Integration & Cryptographic Stamp Technical Standards"
+    search_queries:
+      - '"SAMA" OR "Saudi Central Bank" (regulation OR circular OR cybersecurity OR "open banking" OR cloud OR resilience OR AI OR fintech)'
+      - '"SDAIA" OR "NDMO" Saudi ("PDPL" OR "Personal Data Protection Law" OR "Artificial Intelligence" OR "cross-border data" OR regulation)'
+      - '"National Cybersecurity Authority" OR "NCA" Saudi ("ECC" OR "ECC-2:2024" OR "Cloud Cybersecurity Controls" OR cybersecurity OR CNI)'
+      - '"CST" OR "Communications, Space and Technology Commission" Saudi ("Data Center" OR "Cloud Computing" OR regulation OR emerging tech)'
+      - '"Capital Market Authority" OR "CMA" OR "Insurance Authority" OR "Digital Government Authority" Saudi (cybersecurity OR fintech OR AI OR regulation)'
+      - '"Saudi Arabia" OR "KSA" ("Royal Decree" OR "regulatory framework") (AI OR cybersecurity OR data privacy OR blockchain OR crypto OR "operational resilience")'
+
+  Qatar:
+    name: "State of Qatar"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Qatar", "Circular", "Guideline", "Regulation"]
+    seed_authorities:
+      - code: "QCB"
+        name: "Qatar Central Bank (QCB)"
+        portal_url: "https://www.qcb.gov.qa/en/Pages/Regulations.aspx"
+        sector: "Banking & Central Banking"
+        regulation_standard: "QCB Artificial Intelligence Guidelines, Data Handling & Protection Regulation, Cloud & DLT"
+      - code: "QFCRA"
+        name: "Qatar Financial Centre Regulatory Authority (QFCRA)"
+        portal_url: "https://www.qfcra.com/"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "QFC Digital Asset & Cyber Risk Rules"
+      - code: "NCSA-QA"
+        name: "National Cyber Security Agency (NCSA)"
+        portal_url: "https://ncsa.gov.qa/en/"
+        sector: "Cybersecurity & Critical Infrastructure"
+        regulation_standard: "Qatar Personal Data Privacy Protection Law (PDPPL) & National Cyber Standards"
+    search_queries:
+      - '"Qatar Central Bank" OR "QCB" OR "QFCRA" OR "NCSA" Qatar (AI OR cybersecurity OR data OR fintech OR cloud OR resilience)'
+
+  Bahrain:
+    name: "Kingdom of Bahrain"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Bahrain", "CBB Rulebook", "Module", "Directive"]
+    seed_authorities:
+      - code: "CBB"
+        name: "Central Bank of Bahrain (CBB)"
+        portal_url: "https://cbben.thomsonreuters.com/"
+        sector: "Banking & Central Banking"
+        regulation_standard: "CBB Rulebook Crypto-Asset Module (CRA), Stablecoin Issuance Module, Open Banking"
+    search_queries:
+      - '"Central Bank of Bahrain" OR "CBB" (rulebook OR stablecoin OR crypto OR cybersecurity OR "open banking" OR AI)'
+
+  Kuwait:
+    name: "State of Kuwait"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Kuwait", "CBK", "Framework", "Circular"]
+    seed_authorities:
+      - code: "CBK"
+        name: "Central Bank of Kuwait (CBK)"
+        portal_url: "https://www.cbk.gov.kw/en/legislation-and-regulation"
+        sector: "Banking & Central Banking"
+        regulation_standard: "Cyber and Operational Resilience Framework (CORF v1.0)"
+      - code: "CITRA"
+        name: "Communication and Information Technology Regulatory Authority (CITRA)"
+        portal_url: "https://citra.gov.kw/"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "Kuwait Data Privacy Protection Regulation & Cloud Classification Framework"
+    search_queries:
+      - '"Central Bank of Kuwait" OR "CBK" OR "CITRA" ("CORF" OR cybersecurity OR resilience OR cloud OR fintech OR AI)'
+
+  Oman:
+    name: "Sultanate of Oman"
+    region: "GCC"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Oman", "Royal Decree", "Circular", "Regulation"]
+    seed_authorities:
+      - code: "CBO"
+        name: "Central Bank of Oman (CBO)"
+        portal_url: "https://cbo.gov.om/"
+        sector: "Banking & Central Banking"
+        regulation_standard: "CBO FinTech, Cloud & Cybersecurity Resilience Circulars"
+      - code: "FSA-OM"
+        name: "Financial Services Authority (FSA Oman)"
+        portal_url: "https://fsa.gov.om/"
+        sector: "Capital Markets & Wealth Management"
+        regulation_standard: "Oman Virtual Assets & Capital Market Cybersecurity Rules"
+      - code: "MTCIT"
+        name: "Ministry of Transport, Communications and Information Technology (MTCIT)"
+        portal_url: "https://www.mtcit.gov.om/"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "Oman Personal Data Protection Law (Royal Decree 6/2022) & National AI Policy"
+    search_queries:
+      - '"Central Bank of Oman" OR "FSA Oman" OR "MTCIT" Oman (regulation OR PDPL OR AI OR crypto OR cybersecurity)'
+
+  Egypt:
+    name: "Arab Republic of Egypt"
+    region: "Levant & North Africa"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Egypt", "Decree", "Resolution", "Law"]
+    seed_authorities:
+      - code: "CBE"
+        name: "Central Bank of Egypt (CBE)"
+        portal_url: "https://www.cbe.org.eg/en/laws-and-regulations"
+        sector: "Banking & Central Banking"
+        regulation_standard: "CBE Banking Cybersecurity Framework & Instant Payment / Digital Bank Rules"
+      - code: "FRA"
+        name: "Financial Regulatory Authority (FRA)"
+        portal_url: "https://fra.gov.eg/"
+        sector: "Payments, Open Banking & FinTech"
+        regulation_standard: "Non-Banking FinTech Law No. 5 of 2022, Decree No. 227 (Cybersecurity), Resolution No. 43 of 2026"
+    search_queries:
+      - '"Central Bank of Egypt" OR "Financial Regulatory Authority" Egypt (fintech OR cybersecurity OR e-KYC OR AI OR decree)'
+
+  Turkey:
+    name: "Republic of Türkiye"
+    region: "Levant & North Africa"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Turkey", "Türkiye", "Communiqué", "Law No. 6362", "Regulation"]
+    seed_authorities:
+      - code: "BDDK"
+        name: "Banking Regulation and Supervision Agency (BDDK / BRSA)"
+        portal_url: "https://www.bddk.org.tr/"
+        sector: "Banking & Central Banking"
+        regulation_standard: "Regulation on Banks' Information Systems and Electronic Banking Services"
+      - code: "SPK"
+        name: "Capital Markets Board of Türkiye (SPK / CMB)"
+        portal_url: "https://spk.gov.tr/"
+        sector: "Virtual Assets, Crypto & Blockchain"
+        regulation_standard: "Capital Markets Law No. 6362 CASP Amendments & Secondary Communiqués"
+      - code: "TCMB"
+        name: "Central Bank of the Republic of Türkiye (TCMB / CBRT)"
+        portal_url: "https://www.tcmb.gov.tr/"
+        sector: "Payments, Open Banking & FinTech"
+        regulation_standard: "FAST Open Banking APIs & Digital Turkish Lira Framework"
+      - code: "KVKK"
+        name: "Personal Data Protection Authority (KVKK)"
+        portal_url: "https://www.kvkk.gov.tr/"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "Turkish Personal Data Protection Law No. 6698 & Cross-Border Data Rules"
+    search_queries:
+      - '"BDDK" OR "SPK" OR "TCMB" OR "KVKK" Turkey (crypto OR CASP OR cybersecurity OR "open banking" OR AI)'
+
+  Jordan:
+    name: "Hashemite Kingdom of Jordan"
+    region: "Levant & North Africa"
+    macro_region: "MENAT"
+    enabled_by_default: false
+    legal_instrument_terms: ["Jordan", "Instruction", "Circular", "Regulation"]
+    seed_authorities:
+      - code: "CBJ"
+        name: "Central Bank of Jordan (CBJ)"
+        portal_url: "https://www.cbj.gov.jo/"
+        sector: "Banking & Central Banking"
+        regulation_standard: "Instruction No. (2/2026) Crowdfunding, Open Finance & Cyber Resilience Instructions"
+    search_queries:
+      - '"Central Bank of Jordan" OR "CBJ" (instruction OR fintech OR crowdfunding OR cybersecurity OR AI OR "open finance")'
+
+  South Africa:
+    name: "Republic of South Africa"
+    region: "Sub-Saharan Africa (South Africa)"
+    macro_region: "South Africa"
+    enabled_by_default: false
+    legal_instrument_terms: ["South Africa", "Directive", "Joint Standard", "Notice", "FAIS"]
+    seed_authorities:
+      - code: "SARB-PA"
+        name: "South African Reserve Bank (SARB) / Prudential Authority (PA)"
+        portal_url: "https://www.resbank.co.za/en/home/publications/prudential-authority"
+        sector: "Banking & Central Banking"
+        regulation_standard: "Directive No. 01 of 2024 (NPS Cyber-Resilience) & Joint Standard on Cybersecurity"
+      - code: "FSCA"
+        name: "Financial Sector Conduct Authority (FSCA)"
+        portal_url: "https://www.fsca.co.za/"
+        sector: "Virtual Assets, Crypto & Blockchain"
+        regulation_standard: "FAIS Crypto Asset Service Provider (CASP) Licensing & Joint AI Sector Framework"
+      - code: "IR-SA"
+        name: "Information Regulator (South Africa)"
+        portal_url: "https://inforegulator.org.za/"
+        sector: "Data Privacy, AI & Cloud Computing"
+        regulation_standard: "Protection of Personal Information Act (POPIA) & Security Compromise Rules"
+    search_queries:
+      - '"SARB" OR "FSCA" OR "Prudential Authority" South Africa (directive OR "joint standard" OR crypto OR CASP OR AI OR cybersecurity)'
+
+recommended_api_integrations:
+  - api_name: "CUBE Regulatory Intelligence API (incl. Thomson Reuters Regulatory Intelligence)"
+    provider_type: "Paid"
+    description: "Delivers machine-readable regulatory change feeds, rulebook diffs, and enforcement alerts across 180+ jurisdictions including CBUAE, DFSA, ADGM, VARA, SAMA, QCB, and SARB."
+    documentation_url: "https://cube.global"
+  - api_name: "UAE Ministry of Industry and Advanced Technology (MoIAT) Open Data API"
+    provider_type: "Free"
+    description: "Public REST/JSON endpoints for UAE federal technical standards, conformity assessment registries, and industrial regulations."
+    documentation_url: "https://moiat.gov.ae/en/open-data"
+  - api_name: "Bayanat.ae (UAE Federal Open Data Portal CKAN API)"
+    provider_type: "Free"
+    description: "Official UAE government open data CKAN REST API providing programmatic access to federal datasets and regulatory metadata."
+    documentation_url: "https://bayanat.ae"
+  - api_name: "Saudi Open Data Portal API (SDAIA / open.data.gov.sa)"
+    provider_type: "Free"
+    description: "REST API maintained by SDAIA providing open datasets and public compliance metadata across Saudi ministries and commissions."
+    documentation_url: "https://open.data.gov.sa"
+  - api_name: "Ascent RegTech Obligations API"
+    provider_type: "Paid"
+    description: "Extracts granular, actionable compliance obligations from multi-hundred-page financial rulebooks via REST API."
+    documentation_url: "https://www.ascentregtech.com"
+  - api_name: "Libryo (ERM) Legal & Gazette Tracking API"
+    provider_type: "Paid"
+    description: "Provides automated statutory and official gazette tracking across South Africa, UAE, and MENAT jurisdictions."
+    documentation_url: "https://libryo.com"

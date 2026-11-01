@@ -1,0 +1,1228 @@
+{
+  "scanned_articles": [
+    {
+      "title": "Regulation Document Listing",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Telecommunications & Digital Government",
+      "regulation_standard": "Data Center Services Regulations, Cloud Computing Regulatory Framework (CCRF), IoT & Emerging Tech",
+      "issuing_authority": "Communications, Space and Technology Commission (CST)",
+      "publication_date": "2026-10-30",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Browse CST regulations for communications, space and technology. Search, filter by sector or type, and download official documents.",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://www.cst.gov.sa/en/RulesandSystems/RegulatoryDocuments/Pages/default.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Implementing Regulations | The Capital Market Authority's",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "CMA Cybersecurity Guidelines for Capital Market Institutions, FinTech Lab & Robo-Advisory Rules",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-10-30",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Implementing Regulations | The Capital Market Authority's",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia Proposes Significant Data Protection Changes: What Global Businesses Should Know - The National Law Review",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-10-29",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy"
+      ],
+      "summary": "Saudi Arabia Proposes Significant Data Protection Changes: What Global Businesses Should Know The National Law Review (Source: The National Law Review)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWE1sQ24xeEZ4SnZLSXlzbV9yajZfZ2h2dTNoQ2lDRlZ0TG9IYzd2b3JaZkZJRnZpNnBMdjVrYlJ4NFM0T0hkSlU3RXpjdHg4WTRTZ0c0SWZ1Y0llOXAzR2tlS2ZsbUx3d0t0RjJxWHJERXpMQnFmaXlXWEpIbUVjeUpsS1Zqckd1R2c2ZXU2a0ZQY1R0WWIzckVWRm55dHNTTHpyUm9Hd1BBNEF3ZExlNVdlY9IBuAFBVV95cUxOWDA4WmlWaGc5dXVHZlY1VFFMZU5CTm1XdmtCdDhiWTJkRGp0Tm5wZTROeDlkNmpUMW9WbkYtakRpOTR4c0wyRmpRMnBtTDgtYklGazRFTkJNdWFFVFg5ZXYydTFONHVtODE1c19xNHFpTHhpU3R0bW0wRkozWjJSWDVGQWRZa01ycWhCdlEwQkZCZDdocmItbXl2RzIzZEI0UmJFTmlaejZFZkRkZWw4VmF6dldFbXRO?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "IFC Checked Sama’s Fire Exits. Nobody Checked the Client Exit. - ICTworks",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-27",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Central Banking"
+      ],
+      "summary": "IFC Checked Sama’s Fire Exits. Nobody Checked the Client Exit. ICTworks (Source: ICTworks)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeERDcTZldWp2X1dxMlZIU1BRRGYwemVBcm1FWHdhek1LQjVIOVlBTkFZUnFlV09VUVE4MUpMaWNfTGxKeHJpMk1VdUZIQVoxc09DTUJIWEhlT2RfNDhqbEFqTUl3bGp3a1FweGFnRUc1dHRYeXRXSklWVkZpVWtFc1JWZlc1QWVSa2FSS3N3?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "‘He ended up in Tihar Jail’: Former SoftBank executive Alok Sama on his new book and costly mistakes - Firstpost",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-25",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Central Banking"
+      ],
+      "summary": "‘He ended up in Tihar Jail’: Former SoftBank executive Alok Sama on his new book and costly mistakes Firstpost (Source: Firstpost)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcEZQYjlVaFZNV0lZRkh3TzhwSGRtXzRGblRrVzJjY2plSjlLRU9HM3FlY3Uyc2RiaFFydThBODZ6LThsbC1lUHo3Z21EVTdpTWUza0Raa0ZOd2ZLR2xDN1JRR3NNN21mT3dBM2Mwbk5haTlQMEt4RTE1VjZlSXUxeE15NzFZeGR4MTBOZ0ZpRjNJa0g3cC1pMFV1aHZjOXB4X3BNN0J2bHN0cGFSZDZNbVJmYWxEcy1tNVF6cDk2QlZPOG5obzhUVlRJcmc5VTJKdWwyakNPZ2VPVGxsMGZj0gHkAUFVX3lxTE1qLTNRRjVsWm5NbUpXTEhkSUdSRXFzXzNsWmFfQ0pYWlFjbkZfbjNUVWVkQ09ucFVuVHd6d0JvUlgwallxci1CN1pJNUV3MU93dlhLdnF3MmoxQWgtc3FiV1ZuOXJoT0otdk8zWG9zUm5uenpjb3llWlY1bUtHV05CeURCVVd3eExKaDV3UHJoVDgyUURLU0tTak5RSmVpRWh3ZnFlRm03UjEyMHlXRFY5bFFoOXl0emhObXB6OGdJN3NfNUQ0NjllZWZPQWcxWjF1bjRfeEV2b1hUSTI3M3hFRHo5Qg?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "NCA Launches Cybersecurity Awareness Exhibition at ROSHN Front in Riyadh - وكالة الأنباء السعودية",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "2026-10-22",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "NCA Launches Cybersecurity Awareness Exhibition at ROSHN Front in Riyadh وكالة الأنباء السعودية (Source: وكالة الأنباء السعودية)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE02dkJuRTVQd1E1Z0dzTFo2NkhIMnd6dXFtZVB2cWhETGF3VnNoUGFzNWZlb29tLU5XZlp1ajc1ejVuN3RvVndESHd3?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "The Saudi central bank emphasizes the resilience of the economy despite tensions in the Middle East - المتداول العربي",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-19",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Central Banking"
+      ],
+      "summary": "The Saudi central bank emphasizes the resilience of the economy despite tensions in the Middle East المتداول العربي (Source: المتداول العربي)",
+      "impacted_entities": [
+        "Banks"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbWFRQWU2SmRnVXNseVZuWjRaeXd3bE4tbkpySlNvelFNeUNSOHR4YzhLT1hsSGdobnlqQ3ozVURrbXJDUzd3c1lJZ3B6N29USHR4a3NtVlZUZ24tcldGNm8xdGdZdzFNcGpYU2hnOXUyVXVUMml0MUo4U25hT1EtWmFhT2lZZFF1MHc2ZDhuVHlVM0dOTzVlRUo3LTZ1WHNpQllTaXA5NEJXbEloR0FUSTNaRm9PX1YzZm5VMFEyQURKMGttUzlYZFY1S1JxNi0tRjZ1cUtyWDdvSlNrdVZfMUJMTHVRUQ?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi cybersecurity market grows 10.7% to $4.35bn as digital economy expands - アラブニュース",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-10-17",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi cybersecurity market grows 10.7% to $4.35bn as digital economy expands アラブニュース (Source: アラブニュース)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX0lzQ2lTeEJQa19fTjF0QUV2MXpteTlRalBVenZTemxVaklfdE9MZDg0OVhJaUI2ZXdQZW16SFdZY1dWenVLVG1EUGdkX1VLdmhRRklFek5wMllHTTUycDlBM09WRG9meWhSSC1ITEl1bXd3VjBNR2QtUGplWHFQN2JtSUcwbnQwVDFqR19oZTVTeDlMa0MwVVZ4NkkzRGRsRVRhX19VRlBGNHJuU0wxY0hSaXlmY0E?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SAMA Quantum Circular: Crypto Inventory by December 31 - PostQuantum.com",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Virtual Assets, Crypto & Blockchain",
+      "regulation_standard": "Circular",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-17",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Crypto/Virtual Assets",
+        "Quantum Computing",
+        "Central Banking"
+      ],
+      "summary": "SAMA Quantum Circular: Crypto Inventory by December 31 PostQuantum.com (Source: PostQuantum.com)",
+      "impacted_entities": [
+        "VASP"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBZUEx3dE4xVEZ5QnV4c21GaGd6NFQxQThjaUNtMnV3cnR0c2Rjd2lDNE9MRzJXc1piYzVONTVxZW5OTllQRGdjdmdpa2c3SHVLakxtVV81c3Z6S0w2d2xBS1YxSXU2U3R0ZUpUWWtkUkRfQy04bHhiSQ?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SDAIA and CST Launch Saudi Campaign to Raise Awareness of Deepfake Risks - Konsulteer",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-10-16",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "SDAIA and CST Launch Saudi Campaign to Raise Awareness of Deepfake Risks Konsulteer (Source: Konsulteer)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcFJaR0dvcGlLQ290UFQ5eEd6TDhNY2lMYUZWLTN6cmN0c2pYMDlON3Q1UXJrMGNtejVubG4yOXRmX19IYzdYSV9Zczc5eE5FcHp2aXFlZzVxM3hNeTl6QWhBR1BjNUV6c0g0SnpaU1hRM0t5amZlWjZYb1lMYTFUOUZwNmMwSjZQTzlZd3F6d1lucWthR3d5RU9IZTBGdndLM1NJMkNUNTJ6NGc?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SDAIA Consults on Extensive Amendments to the Saudi PDPL Implementing Regulation - Reed Smith LLP",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Regulation",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-10-16",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy"
+      ],
+      "summary": "SDAIA Consults on Extensive Amendments to the Saudi PDPL Implementing Regulation Reed Smith LLP (Source: Reed Smith LLP)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRDBXYVExN1paZGFkTmRha29fNjUybEJsTktteDliMWF1a1BXOGZlSU9fQ0lYVjdhMjJhRTEtX2xWTjRTVkNzaDlrUVhhSGdnSkVuaUhHalN4c0QyV1drM1F2TlhRY1duT1ZXUnpzd1VvajJ3cDBndHJUMmpiQ251X3BTWmlubGI1N04ya2JsNFRUZkJjczJ6c1hxWEpGX0RSSjhvb254a2g3VkR5RWVQSDJNalFIbXVoUGw1aUZIOHVnVFZpS0lrOGhDZkVkdDdKNEVzajVvLU5lcEZBMmc?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Travelers, Sama Settle Coverage Suit Over Meta AI Glasses Claims - Bloomberg Law News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-15",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)",
+        "Central Banking"
+      ],
+      "summary": "Travelers, Sama Settle Coverage Suit Over Meta AI Glasses Claims Bloomberg Law News (Source: Bloomberg Law News)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPal9sbU16eTctc01QMnhiV01Sd0R0ajdqT0dUVWVOb1lNTldBZVNsUWgtQTUzLXEwRkJLY3RnYkZZb1U0STE3U3l1YW5XaU1fUmp6Njg1RXEwMXl2U3A4ZFF3UkpFbVBOQkRKUi0tSnJuUFYxc2hjMXpJSXRkSHlaSDBaR1BHdlAyZUd1MzhHRGdDNHQxZWdGQVRuN09obDdKdXFXTWFR?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia’s Cybersecurity Market Reaches SAR16.3 Billion, NCA Report Shows - وكالة الأنباء السعودية",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "2026-10-14",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi Arabia’s Cybersecurity Market Reaches SAR16.3 Billion, NCA Report Shows وكالة الأنباء السعودية (Source: وكالة الأنباء السعودية)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1rZFN4ejl4VDJhVktRMWNoTGVyRjRMRU5oQ0FPd3NJMUtnSE1ZWmJheUt6OWp6cFJDZXM1Vnk3bmtjNGI4M1FTZ3p3?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi cybersecurity market reaches SR16.3 billion in 2025 - Latest News from Saudi Arabia and the World - Saudi Gazette",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-10-14",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi cybersecurity market reaches SR16.3 billion in 2025 - Latest News from Saudi Arabia and the World Saudi Gazette (Source: Saudi Gazette)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY2ppU1F6czdveERudW9vMEo5d3BXT0NUNmltR2dkcW5EUWYzaWtfbXpxUTNSVzR0MUZWamx0OWc4ZUZpSmdtRmItMmhheG9kN0Ytd01VZVlRdzBSWThyR3YwcnNpLWhDZ0pQZlVOSmpPQnRsQXVDR3BnSGFRWXh4cHgxRmJHX0ZMQ0FXSmZWN1RWY0hUUkJjd0JxQ01QMG9mMGVmSkNFWXpVRjRCeXhOX3JR?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia: SDAIA opens public consultation on amendments to Implementing Regulation of the PDPL - DataGuidance",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Regulation",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-10-08",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy"
+      ],
+      "summary": "Saudi Arabia: SDAIA opens public consultation on amendments to Implementing Regulation of the PDPL DataGuidance (Source: DataGuidance)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZjhIR1UzclNXaWRSWjctZE1XSzRPUmFWTzlnNnpkUXRnei0wVEhmRDRtZFoxejhQbXdfUWQ4UHVvdEVEZ0NDdFRITk5OMnVVSHZQSmlIQzRyM1BxLUlNbWZ2XzFWQmhYb0pWaFNGT3RORkJwQU1xN1dYaXotSXFEMm44Y2hlV2s?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SAMA Pushes Banks For Quantum-safe Encryption Inventory Now - Quantum Zeitgeist",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-07",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity",
+        "Quantum Computing",
+        "Central Banking"
+      ],
+      "summary": "SAMA Pushes Banks For Quantum-safe Encryption Inventory Now Quantum Zeitgeist (Source: Quantum Zeitgeist)",
+      "impacted_entities": [
+        "Banks"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2JZQ0ctbWZtOF9zUFZaSm4tdUNCRHNsV3ZnUTdGdFpEYWw4T0RyODh2WFRNNG43UkJXWDlIREYwRld3RlkwYUxUM2NaZUpmcVh2NXFDQzVXbzg4R2M5UTVDRlZRdkF2XzNnSzZ5bFN5YWZVTE9HZ0dBSHBkaEFEVw?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SDAIA Opens Registration for Personal Data Protection Track in Data Regulatory Sandbox - وكالة الأنباء السعودية",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Payments, Open Banking & FinTech",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-10-06",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy",
+        "Fintech"
+      ],
+      "summary": "SDAIA Opens Registration for Personal Data Protection Track in Data Regulatory Sandbox وكالة الأنباء السعودية (Source: وكالة الأنباء السعودية)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0ySkJzWVlYRVo3aGpKcmpMdDRsdlBxNlVjUzdjc2QxWjVUWGFtbzZQMWNNU0dCc1dmYTRqOFBEUTJ1RThFWmJqQzRB?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Central Bank Flags Stablecoin Risks As Fintech Firms Hit 371 - OneBullEx",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Virtual Assets, Crypto & Blockchain",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-10-06",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Crypto/Virtual Assets",
+        "Fintech",
+        "Central Banking"
+      ],
+      "summary": "Saudi Central Bank Flags Stablecoin Risks As Fintech Firms Hit 371 OneBullEx (Source: OneBullEx)",
+      "impacted_entities": [
+        "Banks",
+        "Payment Service Providers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORXFnMk5Ncl9yTFI1ZUQyN3A3bG5Mbkswenc5cThFcXV0QlFEa2wtVHJ0RGVRX0s4THhwU3hnTVdsSzBLUXpIdEZHMDVvUUVEeDBDck1qaTQ4MEhDVURRUTBqb20zV1pHRjFGWmg2OU85ZlZ2YjkzY3NBNEEyU200NXROY1NmYUVvbE1mUVl2V3dEandkcG0ta2s4QWNzeUFTeHhNWVlkSTFIVjdh?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "New CMA rules would put Saudi IPO banks on the hook for unsold shares, make bidders prove they have the dry powder - EnterpriseAM",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "News",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-09-28",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "New CMA rules would put Saudi IPO banks on the hook for unsold shares, make bidders prove they have the dry powder EnterpriseAM (Source: EnterpriseAM)",
+      "impacted_entities": [
+        "Banks"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYlczOVlad2hVZGpMbmFBX3cyUEFweHdZUkxZREFRakdNeXlyeXEzUDhEUnJOQ2R0OXZUN05BOFJYU1Nja1dYRVBBVUZvdC01V09Jb05DODVpTS1GcVJWR1ZjTTJGNDV6WFIxaGJIWEdIQW5YeElPRWRrSktIaGNEcEt1b094cEhqRVhMaUVfMVpPalZLUjNsbVJxSDdXZ1NveUhUWE1hZW56a25aNk9LWS03SEFrV1NTSVVhTUJSVGgxckdFdm05TXpXdDJ2cWJ3NHNITDlSUldVRDBzVy1pdGNYeVVmbnhDclFOWndpNFE?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Capital Market Authority seeks to double $213bn funds under management - Arab News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "News",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-09-23",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi Capital Market Authority seeks to double $213bn funds under management Arab News (Source: Arab News)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNjh0UGxCZDB1cWZycXVkcXk5THFFS1pkTl9BanFvX1NMeDY5VVBRN1d5X1B1LVpjZjJ0ak5pYm9PX3FJbnduVXhZUzJYLUhHZzBSRWdkdnJ4dUt0SjVycnRYM09UVVZjN1U5SHEyd1pjeW51WXMzOUs1c0xGZnJZWGg0UF9tUl9yS0tXYWxqQWhudWktOTgwNUozRElxZTlzUXVMZld6Z28wNkQ3RUZmM21GNU1yQ3p3?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "AI Streamers Neuro-sama & Evil To Make Live Debut Dec. 19 In LA [Exclusive] - Pollstar News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "2026-09-21",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)",
+        "Central Banking"
+      ],
+      "summary": "AI Streamers Neuro-sama & Evil To Make Live Debut Dec. 19 In LA [Exclusive] Pollstar News (Source: Pollstar News)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNkpDUWVENWFsZFRwWHZBQ1ZDUjFKMGoyM0hMU191QW5yWFNNZ2tyQUppZjh3OVFKdXlOdUFIdERDMzJYUmhJU1RSYUVqRXlDaEFBekk3ZHlScF9iZEJ0YkdxaTBzNnhXVV9IVHY1Z1pPTTdRUUNHZ21vREhoNi1WZUd6emc2T250clNFUDBvNWVxSE9XLVJFYWtZcDNFUmxaNHlycFNuMEd3ZzVt?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia positions AI as driver of progress and human development, says SDAIA chief - People Matters Global",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-09-15",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Arabia positions AI as driver of progress and human development, says SDAIA chief People Matters Global (Source: People Matters Global)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMVpzcUNsTGpTdEVxZXl5WWdfYXpOYXVTdG9jVnloNG9UbGFnZWZzQ3E1Q3VnbktYZFZRRGhPSzdUdmdjZkFlSmYtdHBVeDhybnRFczVwbkItVzczN2M0cTVVQ2lJNjZQajhlbGp6VHByTGlwNWw4NXVNbzliQk1oLWdCSU9JZUNHZ3lvSE8yMWZhV09QQm5wSE5mamYzSDcyZTJDYS1PSGFTR0VsN2w3WThWVVlUS3FhV0FucWNrcUxZOHk3cktCcGFMa2RnZ2tEVm5OOTVXX1VQNzR1NGNGV0EyWjRPeGNJ?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "From sandbox to scale: Saudi Arabia’s Capital Market Authority opens the door to regulated robo-advice - Dentons",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Payments, Open Banking & FinTech",
+      "regulation_standard": "News",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-09-15",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Fintech"
+      ],
+      "summary": "From sandbox to scale: Saudi Arabia’s Capital Market Authority opens the door to regulated robo-advice Dentons (Source: Dentons)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYWxXOXdKZlFrZjBaZVFCMjV3ZHBtZVNhTlNjeGN0VmN3Y3FUczAtcWk1ejVmLXJHR0U4SWNSZVJkRUNaQk1ITHN2bjFseXMzQW1nTkFYX25oSW5NSjctY1B2U2xzVktQZG9RRlgwZ1A5TE1nMjZkY2hyNnpQaU9va09SUVhRbmo1T0VPaFpNV2pSazQtOEdMenZxZWNqWk1IMVFLY3k3R1pzSnlNMTdKRzd4VWFhMGNhSlpHaDZhZEVidF9aUkNUbDc0M3BuYi1WTmU4?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia positions itself as a global AI powerhouse - Escudo Digital",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-08-24",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Arabia positions itself as a global AI powerhouse Escudo Digital (Source: Escudo Digital)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZFZRVVk5YUdSZG9YeWVzM1liekE4TGZJTTJRbUVTWm1MWi1ZaU1DVDVvVFhEZ0JKV1dIYk85Vmg5OVJWZnhWc1F4X3JDZjZTdmcyS1pvM2NFajNtaWZITWhxRjRDLWdkTmk1WWdWWnZtb0VnMDctT1RhMGc4RGJrdTNURWJJM2FzdTdXRFpHem5zbGNvNnJDejZrQUwydW5ubUV5NE1iS09nRGRFMGJTWjhsYVlLSnlMMzhQdzNzeUFrdktxM1lN?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia replaces head of capital markets regulator - Arabian Gulf Business Insight | AGBI",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-08-14",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi Arabia replaces head of capital markets regulator Arabian Gulf Business Insight | AGBI (Source: Arabian Gulf Business Insight | AGBI)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOd250TmZkM0hOaHRSdHl4Q195XzhpbG1pZmxBMHJHdU8xclVRbmk2TlFwSHFnWENRR2tXdmxPTlgwNnNJVmZrMDNBS05lR0YtblZMVmtIMmcxRTh1R05TSUhISEd2WkpHUWhRSEJHVHpYUVh2ZWY3V2VRaUxqUnBqM05oNU4wSEhaOGJGSGRfSU5LMHA4MG0zNA?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia - Technology Sourcing Laws and Regulations 2026 - ICLG",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "Regulation",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-08-03",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi Arabia - Technology Sourcing Laws and Regulations 2026 ICLG (Source: ICLG)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcnVUa1ZpUTdxNHh0OWUtYjM3eW05VF83b0VzeVFreEdLVERQb1hweGFmRy1ZaVQwdGtTQU8zX3VESnVicEtlOFVTNW14cG5rSXoyem95OGlzaE0xUWJtY00zeTdNRklYQk4yMTB4aXd0cTZacTVJMUsxVzQyYTAwb1NXVF9QYTdqZ3pLQUpwMA?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia’s CST Releases AI Adoption Guide for Technology Companies - TechAfrica News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Communications, Space and Technology Commission (CST)",
+      "publication_date": "2026-08-03",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Arabia’s CST Releases AI Adoption Guide for Technology Companies TechAfrica News (Source: TechAfrica News)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUlJKQ1ZNclhOWlZaamUtS0dZeko2ejNkYjl2cFF1ZGhTNmZGOXlvWVFoWHNsUk1LV1hXc09ZTFY1bXkxU1VGTHNzbHQ0SlBqeGRqMUZMVVdGbXZMWGt6WDc4S1Zrb2xoOVI2NkVYcUROZDB0eDFQd2ZjSUxxR0R0aThLVUk4TEF1eXMxMnJMVjh3anlUSE1LamFqVnZpVXZoZEdzNExZbVRnZk5t?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi’s Salam Receives NCA License to Provide Tier 2 Managed Cybersecurity Services - TechAfrica News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "2026-08-03",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi’s Salam Receives NCA License to Provide Tier 2 Managed Cybersecurity Services TechAfrica News (Source: TechAfrica News)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZnNqbFVQdTBEM2g5WkhSbThhLVEzWWNqRG90RHpMYWYyMTFmVmxVN1ZPM012MDV5YTNsbWE5R3puSHhzYU53b1hmUGw5cjZiS18xNGJDZDZlREVQRmczcjlFUm9yekpVSHRKMjNrNE5ZWGtBZlVoUDdMTWZYak5VZllmSTRHUVh0NldrbVVqOS1pUXdiRDNNYmtzd1VNQng5cjBPMVZhTDBJSlBEMmdyWkhZSVduOGZqWjdYQ3FB?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Copyright Law 2026: Article 26 Explained - vision2030.ai",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-07-31",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Copyright Law 2026: Article 26 Explained vision2030.ai (Source: vision2030.ai)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE93cmo1aUlxSHJ1WnFkSHM3cmxQdWU2NkEtV1U1S2ZjUjZsQnVZcUZNcVBZaTBHVThCWjhsSUNZb2lDaFoyUDh3RzlJcFpGaXpKbU9WTWZZNXJFWWZqWVpFYlpORHR3Q0dRQUtLaGU2ZVplT1pyZmxqag?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "How Saudi Arabia Regulates AI: SDAIA's Framework, Explained - vision2030.ai",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Framework",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2026-07-31",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "How Saudi Arabia Regulates AI: SDAIA's Framework, Explained vision2030.ai (Source: vision2030.ai)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDdFBYYXFGaTlGQjk0MTd6c0YtWm5PQm1nWmlfT3Bka0ZTRFZ1dENWX0VtRUNDdzQ3RjhNMGpYTHdqN1ozOVRBM3FqZ0RUSWN0OC1KREZ3WGlDSXdGSmR3VDlqM0ctVzM3WmdGYzFoNGNHdFoy?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia’s AI Adoption Reaches 45% as Internet Usage Soars - TechAfrica News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-07-21",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Arabia’s AI Adoption Reaches 45% as Internet Usage Soars TechAfrica News (Source: TechAfrica News)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRjZTQXRlZWhpOFBaQUUxSG1KYUJyVlprcFJzUnVSc3lwa0R3LV9KRHZWY1hxdXVFUnNPTVhiUzJ6cjk2RmoxbFVYb1p5VXE2R29fSVpiMkRxREh4V05PelFsd2xJWS12Q210Ql9nSWZ4SGtLVHI5WDc2ZjRXcUg4RzNfR3FENmF4bWZDX1pTcHRLMDhOenJUQko3cGNuUHVs?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Communications Minister Advances Saudi-China Cooperation in AI, Space - وكالة الأنباء السعودية",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-07-14",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Communications Minister Advances Saudi-China Cooperation in AI, Space وكالة الأنباء السعودية (Source: وكالة الأنباء السعودية)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ReWtfc3EzRFBwaTU3dF9zNVU4ZGhOaEU4LUtSd19SZ3I3c3czQ1VyVXdaRG9Fb2I5S29WckZ4WFBKcDdGcHpVdE53?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi-UAE Bank Transfers Face Unusual Delays, Prompting Concerns - Bloomberg.com",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-07-07",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi-UAE Bank Transfers Face Unusual Delays, Prompting Concerns Bloomberg.com (Source: Bloomberg.com)",
+      "impacted_entities": [
+        "Banks"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOEJzZ3lweUNNaURUN2M2ZXNFMEpEaU5kMkRCbnRJUXlHcTdiOEI0Ym1Za2haMmpSclY3ZVM2Z3kxRmZNSi12OWlwT19ZeU04Qk8wajQ2SkttUUN2NjlRYWp2ZzdmcWxZU0lxaHBVQWNIWTFyOEF3SHppVmxqYUdQcHlzYjBPNkZUTHVhbmIyUWdYV3Y1X0FVdkNUbWhCdDNoQmRSckhabm5IVF92ajFOX0FxTFhpYjVqTFNodFVB?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "AI Watch: Global regulatory tracker - United States - White & Case LLP",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-06-30",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "AI Watch: Global regulatory tracker - United States White & Case LLP (Source: White & Case LLP)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbnFCYmQ4ZElvUk9tUFQ0Z210S2hrNmtMaGhid3IxZmozUnVDUm8tZ0FrY05nNlR5bXZLOUk5WWJkcHVjMzhvazJ6M3I2bGtCUlZFWlBBT2l1MGdGbExWY09kWXZZNlQxTW16VjJzSC1McDZ2N21oTjdqclZnVHZTN1VpbmRacC10NjZNYVNIWnBOUGRpblNsRURZbw?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Capital Market Authority closes consultation over reforms to Saudi Arabia’s securities rules - Pinsent Masons",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "Consultation",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-06-29",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Capital Market Authority closes consultation over reforms to Saudi Arabia’s securities rules Pinsent Masons (Source: Pinsent Masons)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSmg2SmlhZUhlemdJa1lvQmp2dzZ1TWRjUjYxb0ZnczdBaUdYMC1OS2h6MjRvY0NQYTdjemtrQ2U4THJ6cXJ1NXo2TG9uSUFWUTFKcmFQOHQ4WHAxcGdaWXRCeDVKMzVRZ1hySW8tWGZKN05aV0c4Vzhsb1VuX1puUmpBUVlnRDdXNllRcEkyb1kyeUh0bDladzNacw?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "GDPR vs Saudi PDPL: convergence, divergence, and practical lessons - Kennedys Law LLP",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-06-22",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy"
+      ],
+      "summary": "GDPR vs Saudi PDPL: convergence, divergence, and practical lessons Kennedys Law LLP (Source: Kennedys Law LLP)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdi13WnFZaTdtQXV1RW0wN0NnTE9DYXVBNE96VFMyX1ZiU1JxWV9LS2t3ZW9yYWZmNjZpOExoMlNUS3ZxSHAtblFiSUQ2b1hadGtCeDQzY1BqdWEtMXVaaWJUVXlJTDJGRTRDdmR0Uks2b3N3Mkl0blJEdmZrUjNMdHRlN1FONUxQdFZ2SExCRjg3SVhpRWM5OTEtNUVyWGNnQy14dko4a01ITHdlWV9FMDVtOF9lQmZyR2ZhMERIMjVjdmtkYkE?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia maintains leading cybersecurity ranking for third consecutive year - Arab News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-06-18",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi Arabia maintains leading cybersecurity ranking for third consecutive year Arab News (Source: Arab News)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORnphNVpDc0VzQWh3VW5KUmFiRGtKT0x4UHdNSlNFSFZDZlRUT3J4dU9vazJfc2FhSDdXU0tJODVUazVGUThkaDNHLWlyeWtydGlxb1NKR1hMSFI3LUJYX3hfRVVfQmFLWURleFdoTjJxTjdTOHh5YkNwc01fRm9PeURfMUJoSVB0SWFsOWN1OW9NSnZWR25haHZXYmhsdlN6SnlCQ0dXNk5FRHhIMWFtUHZqX3Ntc2tBbGNnbkZyaWdmamM?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "CST Holds Specialized Workshop on International Trends for Quantum Computing and its Risks - وكالة الأنباء السعودية",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "Communications, Space and Technology Commission (CST)",
+      "publication_date": "2026-06-17",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Quantum Computing"
+      ],
+      "summary": "CST Holds Specialized Workshop on International Trends for Quantum Computing and its Risks وكالة الأنباء السعودية (Source: وكالة الأنباء السعودية)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FV3M1dGlmQTdDUGtPMVMtMWE2OVA4RzBTTF80Tm5ST3JYZW5meHFBNGpBX20xY09qTUdTdm1Ob054clE4VzVsRkxn?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia Cybersecurity Market Size & Forecast to 2034 - IMARC Group",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-05-20",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity"
+      ],
+      "summary": "Saudi Arabia Cybersecurity Market Size & Forecast to 2034 IMARC Group (Source: IMARC Group)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jSHktaUdfVW1BWmgyVnZvbzFJRDdGY25VZEY1ZWpmN2tNV1hPUHk0aXpXRU12UVR4YlFIREtLMDY3REo0dTE5VVBJM1I3bktGdHZyUmp1SHA5UFdYQzlTMmM2OTJsRld4cUI0Uw?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi CMA Amends Rules on Board Member Removal and Profit Distribution - Latham & Watkins LLP",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "News",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-05-14",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi CMA Amends Rules on Board Member Removal and Profit Distribution Latham & Watkins LLP (Source: Latham & Watkins LLP)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUmNSa29zbTcyVlVvOGQ3blhEekJPdTdrN2JmbG9TaWd3bERfUnlxaGxoN3FCM0VzUEd2NmZFYWMzUW1WYkdhZ2ZlMG1oZE5OaU9tRDAyMkVQMmlWZWozNU1ZaDJyZ0trSklDbnRiWFhsendCLWl5WXYxWldPVHZsRXJrNXNxb2xfVG93bFNGUGFUQ1hYVFQzY0stTjZVenhlZGlN?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Navigating the data protection landscape in Saudi Arabia: policy effectiveness, barriers, and a strategic roadmap - Frontiers",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-05-01",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Data Privacy"
+      ],
+      "summary": "Navigating the data protection landscape in Saudi Arabia: policy effectiveness, barriers, and a strategic roadmap Frontiers (Source: Frontiers)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTlJRTkp0OFJRWHRqOGg3S042cVJOSTVucWJoWDBSam9wcDFweFp3Ui15dUJnNElsRFBfVS1pVW5DZlVURVVIQ3BSMnNHanNiR1ZpVDdlcVdwNDUzTWFONnE4bWQtMFJEWjkwaG5LOEJiVTVITUwzMjU1YnhabjlIdDlFZjRabVBaWW0tdGM4dndhTjF2VkZjMmVB?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi digital readiness hits 76.04% as government accelerates emerging tech adoption - Saudi Gazette",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2026-04-23",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Saudi digital readiness hits 76.04% as government accelerates emerging tech adoption Saudi Gazette (Source: Saudi Gazette)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNOFhrWmx1T05sZUZ1TnY2R0xueU9YWWhSM3hyZDB5WEx0eExzQlEtbERRY2tmZm5ET0p2U21jOTRlTlpqTXNfeldJNkdUdFRNQWFZc0lGMjl2VHcxSDd3ZjRfaTQ2VnkzdkZ3U2hsQzRRMzBhNUFnYmtBTDJrbERwTEFRN3FFbXNCZ3pZRTNaX3N4OUJDdFZZZjRNM2gwZWI4MU8yalpIOWhHeXB0cHN3bDctcnpvS3ZpNHRwYkJ6LTRKc29PcVNZbmlfRktPQ2hNVHowZQ?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "CMA Approves Robo‑Advisory Regulatory Framework - Global Regulation Tomorrow",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "Regulation",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-03-11",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "CMA Approves Robo‑Advisory Regulatory Framework Global Regulation Tomorrow (Source: Global Regulation Tomorrow)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZWVaa2c2RG9KVFNJRThKZ0U5MVdDV3J3Tkg5SGlBN2JwZWdjSWhkWTlpamdjMkRXS3kwWlgxd3NkcG5NZjhBU2RzVFRhRDhmYl9FYUMxQWF0N0hFZWI1V1pfbmdFWkd1S0NpWjVWMXg3YnQ5TERJZmphdzJFdGFzSG9CNUVnUlRnUHNBME54VnZYSEdKMi1qaFlGMTBnQ29j?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "CMA Saudi Arabia — Capital Market Regulator Vision 2030 - vision2030.ai",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "2026-02-22",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "CMA Saudi Arabia — Capital Market Regulator Vision 2030 vision2030.ai (Source: vision2030.ai)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsVHNjUnNtemt4MVlNMnlqZGNEX2FpSDdLVmRtdlN0OHBEYnhEaTJVQS1OSGN6emdmcnFaSlRBdHFFWEJMcWowNjRCaTJhOHBZ?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Bridging the Gap: How Qualys Simplifies NCA ECC 2024 Compliance for Businesses - Qualys",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "News",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "2025-05-05",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Bridging the Gap: How Qualys Simplifies NCA ECC 2024 Compliance for Businesses Qualys (Source: Qualys)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTHRsNUszYlBWbUpWWG8yazBENm5hWU13MldIQzBjTjdxYWs5cEtFR1Y1bmhDcklVZ0VnTXpfUnVGOXdpTU5hTVN2MVdaTkN0NUpOdnc5OGQ2ZjhZRkZUSmZjX1Rzd2U4Y1ZHd0hjM2NDN18xMS11eExoaDJuRDhYVXJDWEpmRkZkVDRvWmU0YVk2a0tWVmsxaDNUWFdmNi1xYW83X1RXQll3X0RZS0R4RHBOaFBTS2VhbGV1Yl9TTV9UMUE?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia unveils $1.78bn investments to advance AI, digital talent - Arab News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2025-02-11",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)"
+      ],
+      "summary": "Saudi Arabia unveils $1.78bn investments to advance AI, digital talent Arab News (Source: Arab News)",
+      "impacted_entities": [
+        "AI & Data Controllers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVVhRSnZiQi03RVp5Z2ZYS05sSk5aY2g4NGZsbGJXMWRtWjNEVnZZcjFyNlFYZmRMRnpPNWFCVzZGdTRMTHgySmlxYlVVQVJMVEZ1cnhRYWlGRURWdmVXQ2lDSTFLTkNzemluZWswSlFyaW15a2liUVBacm5hd3NiTXd2SnVsLWtqOHd4UXRNcTBnQmVsWlBQU3N1djhTNGhTT2dXeGFJdEhTSVpzVHc?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Essential Cybersecurity Controls (ECC-2:2024)",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "Standard (ECC-2:2024)",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "2024-09-01",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity",
+        "Operational Resilience",
+        "Third-Party Governance",
+        "Cloud Computing",
+        "Data Privacy"
+      ],
+      "summary": "Updated mandatory cybersecurity baseline for Saudi government entities, Critical National Infrastructure (CNI), and connected private sector organizations. Strengthens supply chain security, vulnerability patch intervals, and mandates that remote Managed Security Service Provider (MSSP) monitoring centers operate strictly within Saudi Arabia.",
+      "impacted_entities": [
+        "Government Entities",
+        "Critical National Infrastructure (CNI)",
+        "Banks",
+        "MSSPs",
+        "Cloud Providers"
+      ],
+      "source_url": "https://nca.gov.sa/en/regulatory-documents/",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SDAIA Generative AI Guidelines & National AI Ethics Principles (Version 2.0)",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Guideline (SDAIA AI Ethics & GenAI)",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2024-01-15",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Artificial Intelligence (AI)",
+        "Machine Learning (ML)",
+        "Emerging Tech",
+        "Data Privacy",
+        "Cybersecurity"
+      ],
+      "summary": "Provides national governance principles and risk-tiered operational controls for developing, procuring, and deploying Artificial Intelligence and Generative AI models across Saudi government and private sector entities, emphasizing fairness, explainability, human oversight, and protection against prompt injection and training data poisoning.",
+      "impacted_entities": [
+        "AI Developers",
+        "Government Entities",
+        "Banks",
+        "Cloud Providers",
+        "Enterprises"
+      ],
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Arabia’s CST Enacts Data Center Services Regulations - TechAfrica News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Regulation",
+      "issuing_authority": "Communications, Space and Technology Commission (CST)",
+      "publication_date": "2024-01-04",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cloud Computing"
+      ],
+      "summary": "Saudi Arabia’s CST Enacts Data Center Services Regulations TechAfrica News (Source: TechAfrica News)",
+      "impacted_entities": [
+        "Cloud Providers"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUk5yOEdDdUowWWd5THVYNXZGdXowRUl0aktwQVdVdkFrQUN1TDktMkx5N2Z1UkdPQkNETmxXRm12OFNTblc2UEFMcFJTempUdkZZVlVoclA2UmFPQXcyVnJHMGV3T2FKbk9LeWUtcU5RUmt5RlB5RjF3VVR1WFA5WmZNa2N5ZGRiY2g5Z2xTZHpqcWd1Qm4xN2JNSUo?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Data Center Services Regulations & Cloud Computing Regulatory Framework (CCRF)",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Telecommunications & Digital Government",
+      "regulation_standard": "Regulation (CST Data Center & CCRF)",
+      "issuing_authority": "Communications, Space and Technology Commission (CST)",
+      "publication_date": "2024-01-01",
+      "enforcement_date": "2024-01-01",
+      "domain_tags": [
+        "Cloud Computing",
+        "Operational Resilience",
+        "Business Continuity (BCM)",
+        "Disaster Recovery (DR)",
+        "Data Privacy"
+      ],
+      "summary": "Governs cloud service providers and wholesale/retail data center operators in Saudi Arabia. Mandates CST registration, tier classification, customer data protection according to NDMO/SDAIA data classification levels, business continuity SLAs, and disaster recovery resilience.",
+      "impacted_entities": [
+        "Cloud Providers",
+        "Data Center Operators",
+        "Telecom Operators",
+        "Enterprise SaaS Providers"
+      ],
+      "source_url": "https://www.cst.gov.sa/en/RulesandSystems/RegulatoryDocuments/Pages/default.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Personal Data Protection Law (PDPL) Implementing Regulations & Cross-Border Data Transfer Regulation",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Data Privacy, AI & Cloud Computing",
+      "regulation_standard": "Law / Regulation (KSA PDPL)",
+      "issuing_authority": "Saudi Data and Artificial Intelligence Authority (SDAIA / NDMO)",
+      "publication_date": "2023-09-14",
+      "enforcement_date": "2024-09-14",
+      "domain_tags": [
+        "Data Privacy",
+        "Artificial Intelligence (AI)",
+        "Machine Learning (ML)",
+        "Cloud Computing",
+        "Operational Risk"
+      ],
+      "summary": "Enforces comprehensive data protection across the Kingdom of Saudi Arabia, governing automated personal data processing, AI training/profiling consent, mandatory Data Protection Impact Assessments (DPIAs), 72-hour data breach notifications to SDAIA, registration on the National Data Governance Platform, and strict safeguards (Standard Contractual Clauses and Transfer Risk Assessments) for cross-border data transfers.",
+      "impacted_entities": [
+        "Data Controllers",
+        "Data Processors",
+        "Banks",
+        "Cloud Providers",
+        "AI Developers",
+        "Healthcare & Retail Entities"
+      ],
+      "source_url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Who’s Who: Abdulaziz Albatli, senior adviser at Saudi Communications, Space, and Technology Commission - Arab News",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "News",
+      "issuing_authority": "N/A",
+      "publication_date": "2023-07-19",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Emerging Tech",
+        "Operational Risk"
+      ],
+      "summary": "Who’s Who: Abdulaziz Albatli, senior adviser at Saudi Communications, Space, and Technology Commission Arab News (Source: Arab News)",
+      "impacted_entities": [
+        "Regulated Financial & Tech Entities"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMWNQYWtDQy1jeUhHMmd4bnQzVW8xZ1pzbTYtUjh0b2k1eXRXUEphS0JFRXAwVnAxSDJIaF80WlQwQ2M1MWtKSTZYd2E3bkNDM2dXMmdwRWkyNEtMZ0pPeWpKd0I2TnVhdHZvNkZPWlRQeEtDOWFGM1lDZzJ2Q1ZMUndteWp5Y1VnNkpIeHJYXzRoYnk1SEMtSlZBaXNxQ1RCd09NZWRTWXFTTUtmV3BUZE1uUzFqc0oxQ2JsOWtJNWdxNVpoNDZvZGdzV0RNeXlYMkRjZkpTcGFyNU0?oc=5",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Saudi Insurance Authority (IA) Cybersecurity, InsurTech & Operational Risk Supervisory Transition Circulars",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Insurance & Takaful",
+      "regulation_standard": "Circular / Regulation (IA Insurance Supervision)",
+      "issuing_authority": "Insurance Authority (IA — Saudi Arabia)",
+      "publication_date": "N/A",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity",
+        "Operational Risk",
+        "Fintech",
+        "Data Privacy",
+        "Business Continuity (BCM)"
+      ],
+      "summary": "Following the establishment of the dedicated Saudi Insurance Authority (IA) assuming insurance sector oversight from SAMA, enforces continuous compliance with insurance cybersecurity standards, digital brokerage/InsurTech licensing, AI underwriting governance, and policyholder data protection.",
+      "impacted_entities": [
+        "Insurance Companies",
+        "Reinsurance Companies",
+        "InsurTechs",
+        "Insurance Brokers"
+      ],
+      "source_url": "https://ia.gov.sa/",
+      "is_new_authority_discovered": true
+    },
+    {
+      "title": "CMA Cybersecurity Guidelines for Capital Market Institutions & FinTech ExPermit Framework",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Capital Markets & Wealth Management",
+      "regulation_standard": "Guideline / Framework (CMA Cyber & FinTech)",
+      "issuing_authority": "Capital Market Authority (CMA)",
+      "publication_date": "N/A",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity",
+        "Fintech",
+        "Operational Resilience",
+        "Artificial Intelligence (AI)",
+        "Operational Risk"
+      ],
+      "summary": "Sets cybersecurity governance, trading infrastructure resilience, penetration testing, and cyber incident reporting requirements for Saudi Capital Market Institutions (brokers, asset managers, investment banks), alongside FinTech Lab ExPermit rules for robo-advisory, equity crowdfunding, and DLT/tokenized securities testing.",
+      "impacted_entities": [
+        "Capital Market Institutions",
+        "Asset Managers",
+        "Investment Banks",
+        "WealthTech / Robo-Advisors",
+        "Fintechs"
+      ],
+      "source_url": "https://cma.org.sa/en/RulesRegulations/Regulations/Pages/default.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "Cloud Cybersecurity Controls (CCC) & Critical Systems Cybersecurity Controls (CSCC)",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Cybersecurity & Critical Infrastructure",
+      "regulation_standard": "Standard (NCA CCC & CSCC)",
+      "issuing_authority": "National Cybersecurity Authority (NCA)",
+      "publication_date": "N/A",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cloud Computing",
+        "Cybersecurity",
+        "Operational Resilience",
+        "Disaster Recovery (DR)",
+        "Third-Party Governance"
+      ],
+      "summary": "Establishes mandatory cybersecurity requirements for Cloud Service Providers (CSPs) and Cloud Tenants in Saudi Arabia, alongside specialized controls for Critical National Systems. Enforces cryptographic key management inside KSA, tenant isolation, hypervisor security, and continuous compliance monitoring.",
+      "impacted_entities": [
+        "Cloud Providers",
+        "Government Entities",
+        "Critical National Infrastructure (CNI)",
+        "Banks"
+      ],
+      "source_url": "https://nca.gov.sa/en/regulatory-documents/",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SAMA Open Banking Framework — Account Information (AISP) & Payment Initiation (PISP) Technical and Security Standards",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Payments, Open Banking & FinTech",
+      "regulation_standard": "Framework (SAMA Open Banking)",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "N/A",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Open Banking",
+        "Open Finance",
+        "Payments",
+        "Fintech",
+        "Cybersecurity",
+        "Data Privacy"
+      ],
+      "summary": "Establishes mandatory API technical specifications, FAPI security profiles, customer consent management, and operational resilience rules for banks and FinTech Third-Party Providers (AISPs and PISPs) participating in the Saudi Open Banking ecosystem.",
+      "impacted_entities": [
+        "Banks",
+        "Fintechs (AISPs/PISPs)",
+        "Payment Service Providers"
+      ],
+      "source_url": "https://www.sama.gov.sa/en-US/Laws/Pages/default.aspx",
+      "is_new_authority_discovered": false
+    },
+    {
+      "title": "SAMA Cyber Security Framework (CSF), Cloud Computing Subdomain 3.4.3 & Business Continuity Management (BCM) Framework",
+      "region": "GCC",
+      "jurisdiction": "KSA",
+      "sector": "Banking & Central Banking",
+      "regulation_standard": "Framework (SAMA CSF & BCM)",
+      "issuing_authority": "Saudi Central Bank (SAMA)",
+      "publication_date": "N/A",
+      "enforcement_date": "N/A",
+      "domain_tags": [
+        "Cybersecurity",
+        "Cloud Computing",
+        "Business Continuity (BCM)",
+        "Disaster Recovery (DR)",
+        "Operational Resilience",
+        "Third-Party Governance",
+        "Central Banking"
+      ],
+      "summary": "Binding supervisory framework governing cybersecurity, cloud outsourcing, business continuity, and disaster recovery across SAMA-regulated banks, insurance companies, finance companies, and payment service providers. Requires prior written SAMA approval before contracting cloud vendors, strict in-Kingdom data residency, a dedicated CISO (Saudi national) separate from IT, and minimum 12-month security log retention.",
+      "impacted_entities": [
+        "Banks",
+        "Payment Service Providers (PSPs)",
+        "Finance Companies",
+        "Cloud Providers",
+        "Fintechs"
+      ],
+      "source_url": "https://rulebook.sama.gov.sa/en",
+      "is_new_authority_discovered": false
+    }
+  ],
+  "recommended_api_integrations": [
+    {
+      "api_name": "CUBE Regulatory Intelligence API (incl. Thomson Reuters Regulatory Intelligence)",
+      "provider_type": "Paid",
+      "description": "Delivers machine-readable regulatory change feeds, rulebook diffs, and enforcement alerts across 180+ jurisdictions including CBUAE, DFSA, ADGM, VARA, SAMA, QCB, and SARB.",
+      "documentation_url": "https://cube.global"
+    },
+    {
+      "api_name": "UAE Ministry of Industry and Advanced Technology (MoIAT) Open Data API",
+      "provider_type": "Free",
+      "description": "Public REST/JSON endpoints for UAE federal technical standards, conformity assessment registries, and industrial regulations.",
+      "documentation_url": "https://moiat.gov.ae/en/open-data"
+    },
+    {
+      "api_name": "Bayanat.ae (UAE Federal Open Data Portal CKAN API)",
+      "provider_type": "Free",
+      "description": "Official UAE government open data CKAN REST API providing programmatic access to federal datasets and regulatory metadata.",
+      "documentation_url": "https://bayanat.ae"
+    },
+    {
+      "api_name": "Saudi Open Data Portal API (SDAIA / open.data.gov.sa)",
+      "provider_type": "Free",
+      "description": "REST API maintained by SDAIA providing open datasets and public compliance metadata across Saudi ministries and commissions.",
+      "documentation_url": "https://open.data.gov.sa"
+    },
+    {
+      "api_name": "Ascent RegTech Obligations API",
+      "provider_type": "Paid",
+      "description": "Extracts granular, actionable compliance obligations from multi-hundred-page financial rulebooks via REST API.",
+      "documentation_url": "https://www.ascentregtech.com"
+    },
+    {
+      "api_name": "Libryo (ERM) Legal & Gazette Tracking API",
+      "provider_type": "Paid",
+      "description": "Provides automated statutory and official gazette tracking across South Africa, UAE, and MENAT jurisdictions.",
+      "documentation_url": "https://libryo.com"
+    }
+  ],
+  "execution_metadata": {
+    "new_authorities_discovered": [
+      "Insurance Authority (IA — Saudi Arabia) (KSA)",
+      "Authority for Artificial Intelligence and Data (UAE)",
+      "UAE Council for Artificial Intelligence and Blockchain / Office of AI (UAE)"
+    ],
+    "hallucination_check": "Passed - All missing data marked as N/A"
+  }
+}

@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComplianceRadar-Scanner v2.1 | Enterprise Regulatory Intelligence &amp; Compliance IQ Platform</title>
+  <style>
+    :root {
+      --bg-primary: #0b0f19;
+      --bg-card: #131b2e;
+      --bg-card-hover: #19233c;
+      --bg-surface: #0f1626;
+      --border-color: #24304d;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-indigo: #6366f1;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(180deg, rgba(19, 27, 46, 0.98) 0%, rgba(11, 15, 25, 0.98) 100%);
+      border-block-end: 1px solid var(--border-color);
+      padding: 1rem 2rem;
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 30;
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+    }
+
+    .brand-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-indigo));
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #0b0f19;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    }
+
+    .brand-title h1 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .pill-uae {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+
+    .pill-portable {
+      background: rgba(99, 102, 241, 0.16);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+    }
+
+    .pill-amber {
+      background: rgba(245, 158, 11, 0.16);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    .brand-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    button, .btn {
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 0.52rem 0.95rem;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+    }
+
+    button:hover, .btn:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent-blue);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #4f46e5);
+      border-color: #38bdf8;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.12);
+    }
+
+    .btn-emerald {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: rgba(16, 185, 129, 0.5);
+      color: #6ee7b7;
+    }
+
+    .btn-amber {
+      background: rgba(245, 158, 11, 0.18);
+      border-color: rgba(245, 158, 11, 0.5);
+      color: #fde68a;
+    }
+
+    .container {
+      max-width: 1520px;
+      margin: 0 auto;
+      padding: 1.25rem 2rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.35rem;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border-block-end: 1px solid var(--border-color);
+      padding-block-end: 0.75rem;
+    }
+
+    .tab-btn {
+      padding: 0.6rem 1.15rem;
+      border-radius: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.84rem;
+    }
+
+    .tab-btn.active {
+      background: rgba(56, 189, 248, 0.14);
+      border-color: var(--accent-blue);
+      color: var(--text-primary);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.18);
+    }
+
+    .tab-panel {
+      display: none;
+      flex-direction: column;
+      gap: 1.35rem;
+    }
+
+    .tab-panel.active {
+      display: flex;
+    }
+
+    /* KPI Strip */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.9rem;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .kpi-label {
+      font-size: 0.74rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    .kpi-value {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kpi-sub {
+      font-size: 0.75rem;
+      color: var(--accent-blue);
+    }
+
+    /* Scoped Scan Launcher & Filter Panel */
+    .control-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+      gap: 0.85rem;
+      align-items: end;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.32rem;
+    }
+
+    .field-group label {
+      font-size: 0.73rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    input, select, textarea {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 0.52rem 0.75rem;
+      font-size: 0.84rem;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+    }
+
+    /* Responsive Data Table (following modern-web-guidance: responsive-table) */
+    .table-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .table-header-bar {
+      padding: 0.95rem 1.25rem;
+      border-block-end: 1px solid var(--border-color);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .table-wrapper {
+      overflow: auto;
+      max-inline-size: 100%;
+      max-block-size: min(650px, 75vh);
+      container-type: inline-size;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.84rem;
+      --label-1: "Primary Item";
+      --label-2: "Region & Country";
+      --label-3: "Sector & Standard Type";
+      --label-4: "Authority";
+      --label-5: "Dates / Telemetry";
+      --label-6: "Actions";
+    }
+
+    caption {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    thead {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      background: #172138;
+    }
+
+    thead th {
+      text-align: start;
+      padding: 0.8rem 0.95rem;
+      font-size: 0.73rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      border-block-end: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      transition: background 0.12s ease;
+    }
+
+    tbody tr:hover th,
+    tbody tr:hover td {
+      background: var(--bg-card-hover);
+    }
+
+    tbody th,
+    tbody td {
+      padding: 0.9rem 0.95rem;
+      border-block-end: 1px solid var(--border-color);
+      vertical-align: top;
+      text-align: start;
+    }
+
+    tbody th {
+      position: sticky;
+      inset-inline-start: 0;
+      background: var(--bg-card);
+      z-index: 1;
+      max-width: 380px;
+      min-width: 250px;
+      font-weight: 600;
+    }
+
+    @container (width < 700px) {
+      table, thead, tbody, tr, th, td {
+        display: block;
+      }
+
+      thead {
+        /* MANDATORY: Hide column header from layout and screen readers. */
+        display: none;
+      }
+
+      tr {
+        margin-block-end: 1.2rem;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+      }
+
+      tbody th {
+        position: sticky;
+        inset-block-start: 0;
+        z-index: 2;
+        background: #172138;
+        max-width: 100%;
+      }
+
+      td:nth-child(2)::before { content: var(--label-2) ": "; font-weight: 700; color: var(--text-secondary); }
+      td:nth-child(3)::before { content: var(--label-3) ": "; font-weight: 700; color: var(--text-secondary); }
+      td:nth-child(4)::before { content: var(--label-4) ": "; font-weight: 700; color: var(--text-secondary); }
+      td:nth-child(5)::before { content: var(--label-5) ": "; font-weight: 700; color: var(--text-secondary); }
+      td:nth-child(6)::before { content: var(--label-6) ": "; font-weight: 700; color: var(--text-secondary); }
+    }
+
+    .reg-title {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 0.88rem;
+      margin-block-end: 0.3rem;
+      display: block;
+    }
+
+    .reg-summary {
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      font-weight: 400;
+      line-height: 1.45;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.28rem;
+      margin-block-top: 0.35rem;
+    }
+
+    .tag {
+      font-size: 0.68rem;
+      padding: 0.12rem 0.48rem;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      white-space: nowrap;
+    }
+
+    .tag-entity {
+      background: rgba(148, 163, 184, 0.12);
+      color: #cbd5e1;
+      border-color: rgba(148, 163, 184, 0.25);
+    }
+
+    .tag-new-auth {
+      background: rgba(245, 158, 11, 0.16);
+      color: #fcd34d;
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    .date-line {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      white-space: nowrap;
+      color: var(--text-secondary);
+    }
+
+    .date-line strong {
+      color: var(--text-primary);
+    }
+
+    .lower-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .panel-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .api-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    /* Light-Dismiss Modal Dialogs (modern-web-guidance: light-dismiss-a-dialog) */
+    dialog {
+      margin: auto;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--accent-blue);
+      border-radius: 14px;
+      padding: 1.5rem;
+      max-width: min(880px, 92vw);
+      width: 100%;
+      max-height: 86vh;
+      overflow: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    dialog::backdrop {
+      background-color: rgba(5, 8, 17, 0.75);
+      backdrop-filter: blur(3px);
+    }
+
+    .dialog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-block-end: 1rem;
+      padding-block-end: 0.75rem;
+      border-block-end: 1px solid var(--border-color);
+    }
+
+    pre.json-viewer {
+      background: #070a12;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.77rem;
+      color: #a5f3fc;
+      overflow-x: auto;
+      max-height: 54vh;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-badge">CR</div>
+      <div class="brand-title">
+        <h1>
+          ComplianceRadar-Scanner v2.1
+          <span class="pill pill-uae">UAE &amp; Saudi (KSA) Active</span>
+          <span class="pill pill-portable" id="activeAdapterBadge">AI Stack: Portable</span>
+        </h1>
+        <p class="brand-subtitle">Scoped Multi-Level Regulatory Scanner &bull; Manual Source Directory &bull; Report Exporter &bull; Weekly Corporate Digest &bull; Secure External API</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="btn-primary" id="runScanBtn" onclick="triggerScopedScan()">
+        &#x21BB; Run Scoped Scan Now
+      </button>
+      <button type="button" class="btn-amber" onclick="openTab('tab-sources'); document.getElementById('manualUrlInput').focus();">
+        &#xFF0B; Add Manual Link to Scan
+      </button>
+      <button type="button" class="btn-emerald" onclick="downloadCurrentReport('html')">
+        &#x1F4C4; Generate Executive Report
+      </button>
+      <button type="button" onclick="openStrictJsonModal()">
+        &#123;&#125; Strict JSON
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- KPI Strip -->
+    <section class="kpi-grid" aria-label="Scanner Key Performance Indicators">
+      <div class="kpi-card">
+        <span class="kpi-label">Regulations &amp; Circulars</span>
+        <span class="kpi-value" id="kpiTotal">0</span>
+        <span class="kpi-sub" id="kpiUaeCount">0 in UAE &bull; 0 in KSA</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Monitored Sources &amp; Links</span>
+        <span class="kpi-value" id="kpiSources">0</span>
+        <span class="kpi-sub" id="kpiManualSources">0 manually added links</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Enforcement Timelines</span>
+        <span class="kpi-value" id="kpiEnforcement">0</span>
+        <span class="kpi-sub">Zero-Hallucination Verified</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">Weekly Digest Colleagues</span>
+        <span class="kpi-value" id="kpiSubscribers">0</span>
+        <span class="kpi-sub">Corporate Email Briefing Active</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-label">External Platform Sync</span>
+        <span class="kpi-value" id="kpiSynced">0</span>
+        <span class="kpi-sub" id="kpiLastSync">HMAC-SHA256 Secured</span>
+      </div>
+    </section>
+
+    <!-- Primary Workspace Navigation Tabs -->
+    <nav class="nav-tabs" aria-label="Workspace Sections">
+      <button type="button" class="tab-btn active" data-tab="tab-scanner" onclick="openTab('tab-scanner')">
+        1. Scoped Scanner &amp; Regulatory Feed
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-sources" onclick="openTab('tab-sources')">
+        2. Monitored Sources Directory &amp; Manual Links (1.b / 1.c)
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-reports" onclick="openTab('tab-reports')">
+        3. Report Generator &amp; Exports (CSV / PDF-HTML / JSON)
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-email" onclick="openTab('tab-email')">
+        4. Weekly Corporate Email Digest (Colleagues)
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-api" onclick="openTab('tab-api')">
+        5. Secure External Platform API &amp; AI Portability
+      </button>
+    </nav>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 1: SCOPED SCANNER & REGULATORY FEED (Requirement 1.a)             -->
+    <!-- ===================================================================== -->
+    <div id="tab-scanner" class="tab-panel active">
+      <section class="control-panel" aria-label="Multi-Level Scoped Scan and Filter">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <h2 style="font-size: 0.96rem; font-weight: 700;">1.a Multi-Level Scoped Scan Launcher &amp; Live Feed Filter</h2>
+            <p style="font-size: 0.78rem; color: var(--text-secondary);">
+              Select any combination of <strong>Region</strong>, <strong>Country</strong>, <strong>Sector</strong>, and <strong>Regulation / Standard Level</strong> to filter the feed or launch a targeted scan.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button type="button" class="btn-emerald" onclick="quickSelectCountry('UAE')">&#x1F1E6;&#x1F1EA; UAE View</button>
+            <button type="button" class="btn-emerald" onclick="quickSelectCountry('KSA')">&#x1F1F8;&#x1F1E6; Saudi (KSA) View</button>
+            <button type="button" class="btn-emerald" onclick="quickSelectCountry('ALL')">&#x1F30D; Combined UAE + KSA + MENAT</button>
+            <button type="button" class="btn-primary" id="scopedScanBtn2" onclick="triggerScopedScan()">
+              &#x21BB; Initiate Scan for Selected Scope
+            </button>
+            <button type="button" onclick="resetFeedFilters()">Reset Scope</button>
+          </div>
+        </div>
+
+        <div class="control-grid">
+          <div class="field-group">
+            <label for="filterRegion">1. Region Level</label>
+            <select id="filterRegion" onchange="loadRegulations()">
+              <option value="ALL">All Regions (MENAT + South Africa)</option>
+              <option value="MENAT">MENAT (All Middle East, North Africa, Turkey)</option>
+              <option value="GCC">GCC (UAE, KSA, Qatar, Bahrain, Kuwait, Oman)</option>
+              <option value="Levant & North Africa">Levant &amp; North Africa (Egypt, Turkey, Jordan)</option>
+              <option value="Sub-Saharan Africa (South Africa)">Sub-Saharan Africa (South Africa)</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="filterJurisdiction">2. Country / Jurisdiction Level</label>
+            <select id="filterJurisdiction" onchange="loadRegulations()">
+              <option value="ALL" selected>All Countries (UAE + Saudi KSA + MENAT + SA)</option>
+              <option value="UAE">UAE (United Arab Emirates)</option>
+              <option value="KSA">KSA (Saudi Arabia)</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Oman">Oman</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Turkey">Turkey (Türkiye)</option>
+              <option value="Jordan">Jordan</option>
+              <option value="South Africa">South Africa</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="filterSector">3. Sector Level</label>
+            <select id="filterSector" onchange="loadRegulations()">
+              <option value="ALL">All Regulated Sectors</option>
+              <option value="Banking & Central Banking">Banking &amp; Central Banking</option>
+              <option value="Virtual Assets, Crypto & Blockchain">Virtual Assets, Crypto &amp; Blockchain</option>
+              <option value="Capital Markets & Wealth Management">Capital Markets &amp; Wealth Management</option>
+              <option value="Payments, Open Banking & FinTech">Payments, Open Banking &amp; FinTech</option>
+              <option value="Cybersecurity & Critical Infrastructure">Cybersecurity &amp; Critical Infrastructure</option>
+              <option value="Data Privacy, AI & Cloud Computing">Data Privacy, AI &amp; Cloud Computing</option>
+              <option value="Telecommunications & Digital Government">Telecommunications &amp; Digital Government</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="filterRegStandard">4. Regulation / Standard Level</label>
+            <select id="filterRegStandard" onchange="loadRegulations()">
+              <option value="ALL">All Regulations, Standards &amp; Circulars</option>
+              <option value="Regulation">Regulation</option>
+              <option value="Standard">Standard (IAS, ECC, ISO/National)</option>
+              <option value="Framework">Framework (CORF, Cyber, Open Finance)</option>
+              <option value="Circular">Circular</option>
+              <option value="Rulebook">Rulebook (CBUAE, VARA, DFSA, FSRA)</option>
+              <option value="Guideline">Guideline</option>
+              <option value="Directive">Directive / Joint Standard</option>
+              <option value="Law">Law / Federal Decree</option>
+              <option value="News">Regulatory News &amp; Enforcement Notice</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="filterDomain">5. Cross-Domain Tech / Risk Focus</label>
+            <select id="filterDomain" onchange="loadRegulations()">
+              <option value="ALL">All Tech &amp; Risk Domains</option>
+              <option value="Artificial Intelligence">Artificial Intelligence (AI)</option>
+              <option value="Machine Learning">Machine Learning (ML)</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Operational Resilience">Operational Resilience</option>
+              <option value="Business Continuity">Business Continuity (BCM)</option>
+              <option value="Disaster Recovery">Disaster Recovery (DR)</option>
+              <option value="Operational Risk">Operational Risk</option>
+              <option value="Crypto/Virtual Assets">Crypto / Virtual Assets</option>
+              <option value="Open Banking">Open Banking &amp; Open Finance</option>
+              <option value="Cloud Computing">Cloud Computing &amp; Data Residency</option>
+              <option value="Data Privacy">Data Privacy (PDPL / POPIA)</option>
+              <option value="Quantum Computing">Quantum Computing &amp; Encryption</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="filterSearch">6. Specific Keyword / Standard Name</label>
+            <input type="search" id="filterSearch" placeholder="e.g., Payment Token, CORF, CBUAE, PDPL..." oninput="loadRegulations()" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Scanned Regulations Table -->
+      <section class="table-section">
+        <div class="table-header-bar">
+          <div>
+            <h2 style="font-size: 0.98rem; font-weight: 700;">Scanned Regulatory Intelligence Feed</h2>
+            <p style="font-size: 0.77rem; color: var(--text-secondary);" id="tableCountSubtitle">Loading verified regulatory records...</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <button type="button" onclick="downloadCurrentReport('csv')">&#x2B73; Export Filtered CSV</button>
+            <button type="button" onclick="downloadCurrentReport('html')">&#x1F5A8; Printable Executive Report (PDF/HTML)</button>
+            <button type="button" onclick="downloadCurrentReport('json')">&#x2B73; Export Filtered JSON</button>
+          </div>
+        </div>
+
+        <div tabindex="0" role="region" aria-labelledby="regulations-table-caption" class="table-wrapper">
+          <table>
+            <caption id="regulations-table-caption">Scanned MENAT and South Africa Regulatory Intelligence Updates</caption>
+            <thead>
+              <tr>
+                <th>Title, Summary &amp; Domains</th>
+                <th>Region &amp; Country</th>
+                <th>Sector &amp; Regulation/Standard</th>
+                <th>Issuing Authority</th>
+                <th>Dates (Pub / Enf)</th>
+                <th>Obligations &amp; Source</th>
+              </tr>
+            </thead>
+            <tbody id="regulationsTableBody">
+              <tr><th colspan="6">Loading regulatory intelligence feed...</th></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 2: MONITORED SOURCES DIRECTORY & MANUAL LINKS (Req 1.b & 1.c)     -->
+    <!-- ===================================================================== -->
+    <div id="tab-sources" class="tab-panel">
+      <!-- 1.b Manual Link Addition Form -->
+      <section class="control-panel" aria-label="Add Manual Source Link to Scanner">
+        <div>
+          <h2 style="font-size: 0.98rem; font-weight: 700;">1.b Add Custom / Manual Regulatory Link to Scan</h2>
+          <p style="font-size: 0.78rem; color: var(--text-secondary);">
+            Paste any regulator webpage, circular URL, consultation page, or RSS feed and assign its Region, Country, Sector, and Regulation/Standard classification.
+          </p>
+        </div>
+        <div class="control-grid">
+          <div class="field-group">
+            <label for="manualNameInput">Source / Circular Name</label>
+            <input type="text" id="manualNameInput" placeholder="e.g., CBUAE Sandbox & FinTech Circulars" />
+          </div>
+          <div class="field-group">
+            <label for="manualUrlInput">Target URL to Scan (https://...)</label>
+            <input type="url" id="manualUrlInput" placeholder="https://www.centralbank.ae/en/laws-and-regulations/" />
+          </div>
+          <div class="field-group">
+            <label for="manualCountrySelect">Country</label>
+            <select id="manualCountrySelect">
+              <option value="UAE" selected>UAE</option>
+              <option value="KSA">KSA</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Oman">Oman</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Jordan">Jordan</option>
+              <option value="South Africa">South Africa</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="manualSectorSelect">Sector</label>
+            <select id="manualSectorSelect">
+              <option value="Banking & Central Banking">Banking &amp; Central Banking</option>
+              <option value="Virtual Assets, Crypto & Blockchain">Virtual Assets, Crypto &amp; Blockchain</option>
+              <option value="Capital Markets & Wealth Management">Capital Markets &amp; Wealth Management</option>
+              <option value="Payments, Open Banking & FinTech">Payments, Open Banking &amp; FinTech</option>
+              <option value="Cybersecurity & Critical Infrastructure">Cybersecurity &amp; Critical Infrastructure</option>
+              <option value="Data Privacy, AI & Cloud Computing">Data Privacy, AI &amp; Cloud Computing</option>
+              <option value="Telecommunications & Digital Government">Telecommunications &amp; Digital Government</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="manualRegStdInput">Regulation / Standard Name</label>
+            <input type="text" id="manualRegStdInput" placeholder="e.g., Open Finance Regulation / IAS v2" value="Regulation / Circular" />
+          </div>
+          <div class="field-group">
+            <label for="manualAuthorityInput">Issuing Authority</label>
+            <input type="text" id="manualAuthorityInput" placeholder="e.g., Central Bank of the UAE (CBUAE)" />
+          </div>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 0.6rem;">
+          <button type="button" class="btn-primary" id="addManualSourceBtn" onclick="addAndScanManualSource()">
+            &#xFF0B; Add Link &amp; Scan Immediately
+          </button>
+        </div>
+      </section>
+
+      <!-- 1.c Monitored Sources Directory Filter Bar -->
+      <section class="control-panel" aria-label="Filter Monitored Sources Directory">
+        <div>
+          <h2 style="font-size: 0.98rem; font-weight: 700;">1.c Monitored Sources &amp; Scanned Links Directory</h2>
+          <p style="font-size: 0.78rem; color: var(--text-secondary);">
+            Inspect every seed regulator portal and manually added URL tracked by the scanner, filterable by <strong>Region, Country, Sector, and Regulation/Standard</strong>.
+          </p>
+        </div>
+        <div class="control-grid">
+          <div class="field-group">
+            <label for="srcFilterRegion">Filter by Region</label>
+            <select id="srcFilterRegion" onchange="loadSourcesDirectory()">
+              <option value="ALL">All Regions</option>
+              <option value="MENAT">MENAT</option>
+              <option value="GCC">GCC</option>
+              <option value="Levant & North Africa">Levant &amp; North Africa</option>
+              <option value="Sub-Saharan Africa (South Africa)">Sub-Saharan Africa (South Africa)</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="srcFilterCountry">Filter by Country</label>
+            <select id="srcFilterCountry" onchange="loadSourcesDirectory()">
+              <option value="ALL">All Countries</option>
+              <option value="UAE">UAE</option>
+              <option value="KSA">KSA</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Oman">Oman</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Jordan">Jordan</option>
+              <option value="South Africa">South Africa</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="srcFilterSector">Filter by Sector</label>
+            <select id="srcFilterSector" onchange="loadSourcesDirectory()">
+              <option value="ALL">All Sectors</option>
+              <option value="Banking & Central Banking">Banking &amp; Central Banking</option>
+              <option value="Virtual Assets, Crypto & Blockchain">Virtual Assets, Crypto &amp; Blockchain</option>
+              <option value="Capital Markets & Wealth Management">Capital Markets &amp; Wealth Management</option>
+              <option value="Payments, Open Banking & FinTech">Payments, Open Banking &amp; FinTech</option>
+              <option value="Cybersecurity & Critical Infrastructure">Cybersecurity &amp; Critical Infrastructure</option>
+              <option value="Data Privacy, AI & Cloud Computing">Data Privacy, AI &amp; Cloud Computing</option>
+              <option value="Telecommunications & Digital Government">Telecommunications &amp; Digital Government</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="srcFilterType">Source Origin</label>
+            <select id="srcFilterType" onchange="loadSourcesDirectory()">
+              <option value="ALL">All Sources (Seed + Manual)</option>
+              <option value="MANUAL">Manually Added Links Only</option>
+              <option value="SEED">Official Seed Regulator Portals</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="srcFilterStd">Regulation / Standard Search</label>
+            <input type="search" id="srcFilterStd" placeholder="e.g., Rulebook, PDPL, CORF, Crypto..." oninput="loadSourcesDirectory()" />
+          </div>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="table-header-bar">
+          <div>
+            <h2 style="font-size: 0.96rem; font-weight: 700;">Registered Regulatory Portals &amp; Manual Scan Links</h2>
+            <p style="font-size: 0.77rem; color: var(--text-secondary);" id="sourcesCountSubtitle">Loading monitored sources...</p>
+          </div>
+        </div>
+        <div tabindex="0" role="region" aria-labelledby="sources-table-caption" class="table-wrapper">
+          <table>
+            <caption id="sources-table-caption">Directory of Monitored Regulatory Sources and Links</caption>
+            <thead>
+              <tr>
+                <th>Source Name &amp; Scanned URL</th>
+                <th>Region &amp; Country</th>
+                <th>Sector &amp; Regulation / Standard Covered</th>
+                <th>Issuing Authority</th>
+                <th>Last Scan Telemetry</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="sourcesTableBody">
+              <tr><th colspan="6">Loading sources directory...</th></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 3: REPORT GENERATOR & DOWNLOAD CENTER (Requirement 3)             -->
+    <!-- ===================================================================== -->
+    <div id="tab-reports" class="tab-panel">
+      <section class="control-panel">
+        <div>
+          <h2 style="font-size: 1rem; font-weight: 700;">3. Custom Regulatory Intelligence Report Builder</h2>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">
+            Generate and download tailored compliance scan reports filtered by Region, Country, Sector, and Regulation/Standard in <strong>CSV (Excel)</strong>, <strong>Executive Printable HTML/PDF</strong>, or <strong>Strict Schema JSON</strong>.
+          </p>
+        </div>
+
+        <div class="control-grid">
+          <div class="field-group">
+            <label for="repRegion">Report Region</label>
+            <select id="repRegion">
+              <option value="ALL">All Regions (MENAT + South Africa)</option>
+              <option value="GCC">GCC</option>
+              <option value="Levant & North Africa">Levant &amp; North Africa</option>
+              <option value="Sub-Saharan Africa (South Africa)">Sub-Saharan Africa (South Africa)</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="repCountry">Report Country</label>
+            <select id="repCountry">
+              <option value="ALL">All Countries</option>
+              <option value="UAE" selected>UAE</option>
+              <option value="KSA">KSA</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Oman">Oman</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Jordan">Jordan</option>
+              <option value="South Africa">South Africa</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="repSector">Report Sector</label>
+            <select id="repSector">
+              <option value="ALL">All Sectors</option>
+              <option value="Banking & Central Banking">Banking &amp; Central Banking</option>
+              <option value="Virtual Assets, Crypto & Blockchain">Virtual Assets, Crypto &amp; Blockchain</option>
+              <option value="Capital Markets & Wealth Management">Capital Markets &amp; Wealth Management</option>
+              <option value="Payments, Open Banking & FinTech">Payments, Open Banking &amp; FinTech</option>
+              <option value="Cybersecurity & Critical Infrastructure">Cybersecurity &amp; Critical Infrastructure</option>
+              <option value="Data Privacy, AI & Cloud Computing">Data Privacy, AI &amp; Cloud Computing</option>
+              <option value="Telecommunications & Digital Government">Telecommunications &amp; Digital Government</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="repStd">Regulation / Standard Type</label>
+            <select id="repStd">
+              <option value="ALL">All Document Types</option>
+              <option value="Regulation">Regulation</option>
+              <option value="Standard">Standard</option>
+              <option value="Framework">Framework</option>
+              <option value="Circular">Circular</option>
+              <option value="Rulebook">Rulebook</option>
+              <option value="Guideline">Guideline</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem;">
+          <button type="button" class="btn-primary" onclick="downloadCustomBuilderReport('html')">
+            &#x1F5A8; Open Executive Printable Report (Save as PDF)
+          </button>
+          <button type="button" class="btn-emerald" onclick="downloadCustomBuilderReport('csv')">
+            &#x2B73; Download Excel / CSV Report
+          </button>
+          <button type="button" onclick="downloadCustomBuilderReport('json')">
+            &#123;&#125; Download Strict JSON Report
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 4: WEEKLY CORPORATE EMAIL DIGEST (Requirement 4)                  -->
+    <!-- ===================================================================== -->
+    <div id="tab-email" class="tab-panel">
+      <div class="lower-grid">
+        <div class="panel-card">
+          <h3>
+            <span>4. Subscribe Colleagues to Weekly Corporate Email Digest</span>
+            <span class="pill pill-uae">Weekly Briefing</span>
+          </h3>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">
+            Automatically shares weekly regulatory updates, new circulars, and enforcement timelines with colleagues via their corporate email.
+          </p>
+          <div class="field-group">
+            <label for="subEmail">Colleague Corporate Email</label>
+            <input type="email" id="subEmail" placeholder="colleague.name@company.ae" />
+          </div>
+          <div class="field-group">
+            <label for="subName">Full Name / Distribution Group</label>
+            <input type="text" id="subName" placeholder="e.g., Sarah Al-Mansoori / CISO Office" />
+          </div>
+          <div class="field-group">
+            <label for="subDept">Department / Function</label>
+            <input type="text" id="subDept" placeholder="e.g., Information Security, Legal & Compliance" value="Compliance & Cyber Risk" />
+          </div>
+          <div class="control-grid">
+            <div class="field-group">
+              <label for="subCountry">Target Country Scope</label>
+              <select id="subCountry">
+                <option value="UAE" selected>UAE</option>
+                <option value="ALL">All MENAT + South Africa</option>
+                <option value="KSA">KSA</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="South Africa">South Africa</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="subSector">Target Sector Scope</label>
+              <select id="subSector">
+                <option value="ALL" selected>All Sectors</option>
+                <option value="Banking & Central Banking">Banking &amp; Central Banking</option>
+                <option value="Virtual Assets, Crypto & Blockchain">Virtual Assets &amp; Crypto</option>
+                <option value="Cybersecurity & Critical Infrastructure">Cybersecurity</option>
+                <option value="Data Privacy, AI & Cloud Computing">Data Privacy, AI &amp; Cloud</option>
+              </select>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.6rem; margin-top: 0.4rem;">
+            <button type="button" class="btn-primary" onclick="addColleagueSubscriber()">&#xFF0B; Add Colleague to Weekly Digest</button>
+            <button type="button" class="btn-emerald" onclick="dispatchWeeklyDigestNow()">&#x2709; Dispatch Weekly Digest Now</button>
+            <a class="btn" href="/api/v1/email-digest/latest-preview" target="_blank" rel="noopener">Preview Formatted Email</a>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <h3>
+            <span>Active Corporate Subscribers &amp; Dispatch Logs</span>
+            <span class="pill pill-portable">Every Monday 08:30 GST</span>
+          </h3>
+          <div id="subscribersListContainer" style="display: flex; flex-direction: column; gap: 0.55rem;"></div>
+          <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0.5rem 0;" />
+          <strong style="font-size: 0.8rem; color: var(--text-secondary);">Recent Weekly Digest Dispatches:</strong>
+          <div id="digestLogsContainer" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 5: SECURE EXTERNAL API, COMPLIANCE IQ & PORTABLE AI (Req 2 & 5)   -->
+    <!-- ===================================================================== -->
+    <div id="tab-api" class="tab-panel">
+      <div class="lower-grid">
+        <div class="panel-card">
+          <h3>
+            <span>2. Secure External Platform API (Compliance IQ &amp; Phase 2 Mobile Ready)</span>
+            <span class="pill pill-uae">Bearer + HMAC-SHA256</span>
+          </h3>
+          <p style="font-size: 0.8rem; color: var(--text-secondary);">
+            Connect your separate <strong>Compliance IQ</strong> platform (or future Phase 2 iOS/Android mobile apps) securely via API Key / Bearer Token authentication and HMAC-SHA256 cryptographic signature verification.
+          </p>
+          <div class="api-item">
+            <strong style="font-size: 0.82rem; color: var(--accent-blue);">Inbound Pull Endpoint (Authenticated):</strong>
+            <code style="font-family: var(--font-mono); font-size: 0.76rem; color: #e2e8f0;">
+              GET /api/v1/external/feed?jurisdiction=UAE&amp;sector=ALL
+            </code>
+            <span style="font-size: 0.74rem; color: var(--text-secondary);">
+              Required Header: <code>X-API-Key: complianceradar-dev-secret</code> or <code>Authorization: Bearer &lt;COMPLIANCE_IQ_API_SECRET&gt;</code><br>
+              Response Integrity Header: <code>X-ComplianceRadar-Signature: sha256=&lt;hmac_hex&gt;</code>
+            </span>
+          </div>
+          <div class="api-item">
+            <strong style="font-size: 0.82rem; color: var(--accent-emerald);">Outbound Signed Webhook Push:</strong>
+            <code style="font-family: var(--font-mono); font-size: 0.76rem; color: #e2e8f0;">
+              POST /api/v1/compliance-iq/push
+            </code>
+            <div style="margin-top: 0.4rem;">
+              <button type="button" class="btn-emerald" onclick="pushToComplianceIQ()">
+                &#x2197; Push Signed UAE Feed to Compliance IQ Now
+              </button>
+            </div>
+          </div>
+
+          <h4 style="font-size: 0.85rem; margin-top: 0.5rem;">Recommended Third-Party &amp; Open Data APIs</h4>
+          <div id="apiIntegrationsList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+        </div>
+
+        <div class="panel-card">
+          <h3>
+            <span>Portable AI Stack (Gemini / AWS Bedrock) &amp; Scheduler</span>
+            <span class="pill pill-portable">Zero Vendor Lock-in</span>
+          </h3>
+          <div class="field-group">
+            <label for="cfgLlmProvider">AI Extraction Provider</label>
+            <select id="cfgLlmProvider">
+              <option value="gemini">Google Gemini (google-genai / Antigravity Native)</option>
+              <option value="bedrock">AWS Bedrock (boto3 Converse API — Claude 3.5/3.7, Amazon Nova, Llama)</option>
+              <option value="openai_compatible">OpenAI-Compatible Endpoint (OpenAI / Azure / vLLM / Ollama)</option>
+              <option value="deterministic">Deterministic Zero-Cost Rule Engine</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="cfgJurisdictions">Background Daemon Active Jurisdictions</label>
+            <input type="text" id="cfgJurisdictions" value="UAE" />
+          </div>
+          <div class="field-group">
+            <label for="cfgInterval">Background Scan Interval (Minutes)</label>
+            <input type="number" id="cfgInterval" value="360" min="5" />
+          </div>
+          <div class="field-group">
+            <label for="cfgWebhook">Downstream Compliance IQ Webhook URL</label>
+            <input type="url" id="cfgWebhook" value="http://localhost:8080/api/v1/compliance-iq/mock-receiver" />
+          </div>
+          <div>
+            <button type="button" class="btn-primary" onclick="saveSchedulerConfig()">Save AI Stack &amp; Daemon Settings</button>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0.5rem 0;" />
+          <strong style="font-size: 0.82rem;">Recent Scan Telemetry &amp; Newly Discovered Authorities:</strong>
+          <div id="scanRunsList" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal 1: Strict Output JSON Viewer (with closedby="any" light dismiss) -->
+  <dialog id="strictJsonDialog" closedby="any" aria-labelledby="strictJsonDialogTitle">
+    <div class="dialog-header">
+      <h2 id="strictJsonDialogTitle" style="font-size: 1.05rem;">Strict Output JSON Schema (ComplianceRadar-Scanner)</h2>
+      <form method="dialog"><button type="submit">Close (Esc)</button></form>
+    </div>
+    <div style="margin-block-end: 0.75rem; display: flex; gap: 0.5rem;">
+      <button type="button" class="btn-primary" onclick="copyStrictJson()">Copy JSON to Clipboard</button>
+    </div>
+    <pre class="json-viewer" id="strictJsonPre">Loading...</pre>
+  </dialog>
+
+  <!-- Modal 2: Regulation Detail Inspector -->
+  <dialog id="detailDialog" closedby="any" aria-labelledby="detailDialogTitle">
+    <div class="dialog-header">
+      <h2 id="detailDialogTitle" style="font-size: 1.05rem;">Regulation &amp; Actionable Compliance Obligations</h2>
+      <form method="dialog"><button type="submit">Close (Esc)</button></form>
+    </div>
+    <div id="detailDialogBody" style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.88rem;"></div>
+  </dialog>
+
+  <script>
+    // Mandatory Fallback for browsers without <dialog closedby> support (per modern-web-guidance: light-dismiss-a-dialog)
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      document.querySelectorAll('dialog').forEach((dialog) => {
+        dialog.addEventListener('click', (event) => {
+          if (event.target !== dialog) return;
+          const rect = dialog.getBoundingClientRect();
+          const isDialogContent = (
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width
+          );
+          if (isDialogContent) return;
+          dialog.close();
+        });
+      });
+    }
+
+    let currentRegulations = [];
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str ?? 'N/A';
+      return div.innerHTML;
+    }
+
+    function openTab(tabId) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      const target = document.getElementById(tabId);
+      if (target) target.classList.add('active');
+      const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+      if (btn) btn.classList.add('active');
+
+      if (tabId === 'tab-sources') loadSourcesDirectory();
+      if (tabId === 'tab-email') loadEmailDigestTab();
+    }
+
+    async function loadSystemStatus() {
+      try {
+        const res = await fetch('/api/v1/status');
+        const data = await res.json();
+
+        document.getElementById('kpiTotal').textContent = data.metrics.total_regulations;
+        document.getElementById('kpiUaeCount').textContent =
+          `${data.metrics.uae_regulations} in UAE \u2022 ${data.metrics.ksa_regulations || 0} in Saudi (KSA)`;
+        document.getElementById('kpiSources').textContent = data.metrics.total_monitored_sources;
+        document.getElementById('kpiManualSources').textContent = `${data.metrics.manual_sources_count} manually added links`;
+        document.getElementById('kpiEnforcement').textContent = data.metrics.tracked_enforcement_dates;
+        document.getElementById('kpiSubscribers').textContent = data.metrics.email_subscribers_count;
+        document.getElementById('kpiSynced').textContent = data.metrics.synced_to_compliance_iq;
+
+        const sched = data.scheduler;
+        document.getElementById('activeAdapterBadge').textContent =
+          `AI Stack: ${sched.configured_llm_provider.toUpperCase()} (${sched.active_adapter_runtime})`;
+        document.getElementById('cfgLlmProvider').value = sched.configured_llm_provider;
+        document.getElementById('cfgJurisdictions').value = (sched.active_jurisdictions || ['UAE']).join(', ');
+        document.getElementById('cfgInterval').value = sched.interval_minutes;
+        if (sched.compliance_iq_webhook_url) {
+          document.getElementById('cfgWebhook').value = sched.compliance_iq_webhook_url;
+        }
+        if (sched.last_compliance_iq_sync) {
+          document.getElementById('kpiLastSync').textContent = sched.last_compliance_iq_sync.delivery_status;
+        }
+
+        const apiContainer = document.getElementById('apiIntegrationsList');
+        apiContainer.innerHTML = (data.recommended_api_integrations || []).map(api => `
+          <div class="api-item">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <strong style="font-size: 0.82rem;">${escapeHtml(api.api_name)}</strong>
+              <span class="pill ${api.provider_type === 'Free' ? 'pill-uae' : 'pill-portable'}">${escapeHtml(api.provider_type)}</span>
+            </div>
+            <p style="font-size: 0.76rem; color: var(--text-secondary);">${escapeHtml(api.description)}</p>
+          </div>
+        `).join('');
+
+        const runsContainer = document.getElementById('scanRunsList');
+        const newAuthHtml = (data.new_authorities_list && data.new_authorities_list.length)
+          ? `<div class="api-item">
+               <strong style="font-size: 0.8rem; color: #fcd34d;">Newly Discovered Authorities:</strong>
+               <p style="font-size: 0.76rem; color: var(--text-secondary);">${data.new_authorities_list.map(escapeHtml).join(' &bull; ')}</p>
+             </div>`
+          : '';
+        const runsHtml = (data.recent_scan_runs || []).slice(0, 4).map(run => `
+          <div class="api-item">
+            <div style="display: flex; justify-content: space-between;">
+              <strong style="font-size: 0.8rem; font-family: var(--font-mono);">${escapeHtml(run.run_id)} (${escapeHtml(run.status)})</strong>
+              <span style="font-size: 0.74rem; color: var(--accent-emerald);">+${run.new_items_added} new / ${run.items_discovered} scanned</span>
+            </div>
+            <p style="font-size: 0.73rem; color: var(--text-secondary);">${escapeHtml(run.log_summary)}</p>
+          </div>
+        `).join('');
+        runsContainer.innerHTML = newAuthHtml + runsHtml;
+      } catch (err) {
+        console.error('Status load error:', err);
+      }
+    }
+
+    function getCurrentScopeParams() {
+      const reg = document.getElementById('filterRegion').value;
+      const jur = document.getElementById('filterJurisdiction').value;
+      const sec = document.getElementById('filterSector').value;
+      const std = document.getElementById('filterRegStandard').value;
+      const dom = document.getElementById('filterDomain').value;
+      const q = document.getElementById('filterSearch').value;
+
+      const params = new URLSearchParams();
+      if (reg && reg !== 'ALL') params.set('region', reg);
+      if (jur && jur !== 'ALL') params.set('jurisdiction', jur);
+      if (sec && sec !== 'ALL') params.set('sector', sec);
+      if (std && std !== 'ALL') params.set('regulation_standard', std);
+      if (dom && dom !== 'ALL') params.set('domain_tag', dom);
+      if (q && q.trim()) params.set('search', q.trim());
+      return params;
+    }
+
+    function quickSelectCountry(countryCode) {
+      document.getElementById('filterRegion').value = 'ALL';
+      document.getElementById('filterJurisdiction').value = countryCode;
+      loadRegulations();
+    }
+
+    function resetFeedFilters() {
+      document.getElementById('filterRegion').value = 'ALL';
+      document.getElementById('filterJurisdiction').value = 'ALL';
+      document.getElementById('filterSector').value = 'ALL';
+      document.getElementById('filterRegStandard').value = 'ALL';
+      document.getElementById('filterDomain').value = 'ALL';
+      document.getElementById('filterSearch').value = '';
+      loadRegulations();
+    }
+
+    async function loadRegulations() {
+      const params = getCurrentScopeParams();
+      try {
+        const res = await fetch(`/api/v1/regulations?${params.toString()}`);
+        const data = await res.json();
+        currentRegulations = data.items || [];
+
+        document.getElementById('tableCountSubtitle').textContent =
+          `Showing ${currentRegulations.length} record(s) matching current Region / Country / Sector / Regulation-Standard filter`;
+
+        const tbody = document.getElementById('regulationsTableBody');
+        if (!currentRegulations.length) {
+          tbody.innerHTML = `<tr><th colspan="6" style="text-align:center; color: var(--text-secondary);">No records match this filter combination. Click "Initiate Scan for Selected Scope" to crawl live updates for this scope.</th></tr>`;
+          return;
+        }
+
+        tbody.innerHTML = currentRegulations.map((item, idx) => {
+          const tagsHtml = (item.domain_tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+          const entitiesHtml = (item.impacted_entities || []).map(e => `<span class="tag tag-entity">${escapeHtml(e)}</span>`).join('');
+          const newAuthBadge = item.is_new_authority_discovered
+            ? `<span class="tag tag-new-auth">New Authority Discovered</span>`
+            : '';
+          const sourceLink = (item.source_url && item.source_url !== 'N/A')
+            ? `<a href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener" class="btn" style="padding: 0.28rem 0.55rem; font-size: 0.74rem;">Source &#x2197;</a>`
+            : `<span style="font-size:0.74rem; color:var(--text-secondary);">URL: N/A</span>`;
+
+          return `
+            <tr>
+              <th scope="row">
+                <span class="reg-title">${escapeHtml(item.title)}</span>
+                <p class="reg-summary">${escapeHtml(item.summary)}</p>
+                <div class="tag-list">${tagsHtml} ${entitiesHtml}</div>
+              </th>
+              <td>
+                <div style="font-size:0.74rem; color:var(--text-secondary); margin-bottom:0.2rem;">${escapeHtml(item.region || 'GCC')}</div>
+                <span class="pill pill-uae">${escapeHtml(item.jurisdiction)}</span>
+              </td>
+              <td>
+                <div style="font-weight:600; font-size:0.8rem; color:var(--accent-blue);">${escapeHtml(item.sector || 'Banking & Central Banking')}</div>
+                <div style="font-size:0.74rem; color:var(--text-secondary); margin-top:0.2rem;">${escapeHtml(item.regulation_standard || item.document_type || 'Regulation')}</div>
+              </td>
+              <td>
+                <div style="font-weight: 600; font-size: 0.8rem; margin-bottom: 0.25rem;">${escapeHtml(item.issuing_authority)}</div>
+                ${newAuthBadge}
+              </td>
+              <td>
+                <div class="date-line">Pub: <strong>${escapeHtml(item.publication_date)}</strong></div>
+                <div class="date-line">Enf: <strong>${escapeHtml(item.enforcement_date)}</strong></div>
+              </td>
+              <td>
+                <div style="display: flex; flex-direction: column; gap: 0.38rem; align-items: flex-start;">
+                  <button type="button" style="padding: 0.28rem 0.55rem; font-size: 0.74rem;" onclick="showRegulationDetail(${idx})">
+                    Obligations
+                  </button>
+                  ${sourceLink}
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      } catch (err) {
+        console.error('Error loading regulations:', err);
+      }
+    }
+
+    async function triggerScopedScan() {
+      const btn1 = document.getElementById('runScanBtn');
+      const btn2 = document.getElementById('scopedScanBtn2');
+      const reg = document.getElementById('filterRegion').value;
+      const jur = document.getElementById('filterJurisdiction').value;
+      const sec = document.getElementById('filterSector').value;
+      const std = document.getElementById('filterRegStandard').value;
+      const q = document.getElementById('filterSearch').value;
+
+      const jurisdictions = (jur && jur !== 'ALL') ? [jur] : ['ALL'];
+      btn1.disabled = true;
+      btn2.disabled = true;
+      btn1.textContent = 'Scanning Selected Scope...';
+      btn2.textContent = 'Scanning Selected Scope...';
+
+      try {
+        const res = await fetch('/api/v1/scan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            region: reg,
+            jurisdictions: jurisdictions,
+            sector: sec,
+            regulation_standard: std,
+            custom_query: q || null
+          })
+        });
+        const result = await res.json();
+        await loadSystemStatus();
+        await loadRegulations();
+        const msg = `Scan Done (+${result.new_items_added} new / ${result.items_discovered} checked)`;
+        btn1.textContent = msg;
+        btn2.textContent = msg;
+        setTimeout(() => {
+          btn1.disabled = false;
+          btn2.disabled = false;
+          btn1.innerHTML = '&#x21BB; Run Scoped Scan Now';
+          btn2.innerHTML = '&#x21BB; Initiate Scan for Selected Scope';
+        }, 3000);
+      } catch (err) {
+        btn1.disabled = false;
+        btn2.disabled = false;
+        btn1.innerHTML = '&#x21BB; Run Scoped Scan Now';
+        btn2.innerHTML = '&#x21BB; Initiate Scan for Selected Scope';
+      }
+    }
+
+    // --- Tab 2: Monitored Sources & Manual Link Addition ---
+    async function loadSourcesDirectory() {
+      const reg = document.getElementById('srcFilterRegion').value;
+      const cnt = document.getElementById('srcFilterCountry').value;
+      const sec = document.getElementById('srcFilterSector').value;
+      const typ = document.getElementById('srcFilterType').value;
+      const std = document.getElementById('srcFilterStd').value;
+
+      const params = new URLSearchParams();
+      if (reg && reg !== 'ALL') params.set('region', reg);
+      if (cnt && cnt !== 'ALL') params.set('country', cnt);
+      if (sec && sec !== 'ALL') params.set('sector', sec);
+      if (typ && typ !== 'ALL') params.set('source_type', typ);
+      if (std && std.trim()) params.set('regulation_standard', std.trim());
+
+      const res = await fetch(`/api/v1/sources?${params.toString()}`);
+      const data = await res.json();
+      const items = data.items || [];
+      document.getElementById('sourcesCountSubtitle').textContent =
+        `Showing ${items.length} monitored regulatory portal(s) and custom link(s)`;
+
+      const tbody = document.getElementById('sourcesTableBody');
+      if (!items.length) {
+        tbody.innerHTML = `<tr><th colspan="6" style="text-align:center; color:var(--text-secondary);">No monitored sources match this filter.</th></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = items.map(src => `
+        <tr>
+          <th scope="row">
+            <span class="reg-title">${escapeHtml(src.source_name)}</span>
+            <a href="${escapeHtml(src.source_url)}" target="_blank" rel="noopener" style="font-size:0.76rem; color:var(--accent-blue); word-break:break-all;">
+              ${escapeHtml(src.source_url)}
+            </a>
+            <div style="margin-top:0.3rem;">
+              <span class="pill ${src.is_manual ? 'pill-amber' : 'pill-portable'}">${src.is_manual ? 'Manual Link' : 'Official Seed Portal'}</span>
+            </div>
+          </th>
+          <td>
+            <div style="font-size:0.75rem; color:var(--text-secondary);">${escapeHtml(src.region)}</div>
+            <span class="pill pill-uae">${escapeHtml(src.country)}</span>
+          </td>
+          <td>
+            <div style="font-weight:600; font-size:0.8rem; color:var(--accent-blue);">${escapeHtml(src.sector)}</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.2rem;">${escapeHtml(src.regulation_standard)}</div>
+          </td>
+          <td>${escapeHtml(src.issuing_authority)}</td>
+          <td>
+            <div class="date-line">Status: <strong>${escapeHtml(src.last_status)}</strong></div>
+            <div class="date-line">Extracted: <strong>${src.items_extracted}</strong></div>
+            <div class="date-line">Last: ${src.last_scanned_at !== 'Never' ? new Date(src.last_scanned_at).toLocaleTimeString() : 'Ready'}</div>
+          </td>
+          <td>
+            <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+              <button type="button" class="btn-primary" style="padding:0.28rem 0.55rem; font-size:0.74rem;" onclick="scanSingleSource('${src.source_id}')">
+                Scan Link Now
+              </button>
+              ${src.is_manual ? `<button type="button" style="padding:0.28rem 0.55rem; font-size:0.74rem; color:#fda4af;" onclick="deleteSource('${src.source_id}')">Remove</button>` : ''}
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    async function addAndScanManualSource() {
+      const name = document.getElementById('manualNameInput').value.trim();
+      const url = document.getElementById('manualUrlInput').value.trim();
+      const country = document.getElementById('manualCountrySelect').value;
+      const sector = document.getElementById('manualSectorSelect').value;
+      const regStd = document.getElementById('manualRegStdInput').value.trim() || 'Regulation';
+      const auth = document.getElementById('manualAuthorityInput').value.trim() || name || 'Custom Regulator Link';
+
+      if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        alert('Please enter a valid URL starting with https:// or http://');
+        return;
+      }
+
+      const btn = document.getElementById('addManualSourceBtn');
+      btn.disabled = true;
+      btn.textContent = 'Adding & Scanning Link...';
+
+      try {
+        const res = await fetch('/api/v1/sources', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            source_name: name || url,
+            source_url: url,
+            country: country,
+            sector: sector,
+            regulation_standard: regStd,
+            issuing_authority: auth,
+            scan_immediately: true
+          })
+        });
+        if (!res.ok) {
+          const err = await res.json();
+          alert(err.detail || 'Error adding link');
+        } else {
+          document.getElementById('manualNameInput').value = '';
+          document.getElementById('manualUrlInput').value = '';
+          await loadSourcesDirectory();
+          await loadSystemStatus();
+          await loadRegulations();
+        }
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '&#xFF0B; Add Link &amp; Scan Immediately';
+      }
+    }
+
+    async function scanSingleSource(sourceId) {
+      await fetch(`/api/v1/sources/${encodeURIComponent(sourceId)}/scan`, { method: 'POST' });
+      await loadSourcesDirectory();
+      await loadSystemStatus();
+      await loadRegulations();
+    }
+
+    async function deleteSource(sourceId) {
+      await fetch(`/api/v1/sources/${encodeURIComponent(sourceId)}`, { method: 'DELETE' });
+      await loadSourcesDirectory();
+      await loadSystemStatus();
+    }
+
+    // --- Tab 3: Downloadable Reports ---
+    function downloadCurrentReport(format) {
+      const params = getCurrentScopeParams();
+      params.set('format', format);
+      window.open(`/api/v1/reports/download?${params.toString()}`, '_blank');
+    }
+
+    function downloadCustomBuilderReport(format) {
+      const params = new URLSearchParams();
+      params.set('format', format);
+      const reg = document.getElementById('repRegion').value;
+      const cnt = document.getElementById('repCountry').value;
+      const sec = document.getElementById('repSector').value;
+      const std = document.getElementById('repStd').value;
+      if (reg !== 'ALL') params.set('region', reg);
+      if (cnt !== 'ALL') params.set('jurisdiction', cnt);
+      if (sec !== 'ALL') params.set('sector', sec);
+      if (std !== 'ALL') params.set('regulation_standard', std);
+      window.open(`/api/v1/reports/download?${params.toString()}`, '_blank');
+    }
+
+    // --- Tab 4: Weekly Corporate Email Digest ---
+    async function loadEmailDigestTab() {
+      const res = await fetch('/api/v1/email-digest/subscribers');
+      const data = await res.json();
+      const subs = data.subscribers || [];
+      const logs = data.digest_logs || [];
+
+      document.getElementById('subscribersListContainer').innerHTML = subs.map(s => `
+        <div class="api-item" style="flex-direction:row; justify-content:space-between; align-items:center;">
+          <div>
+            <strong style="font-size:0.84rem;">${escapeHtml(s.full_name)}</strong>
+            <span style="font-size:0.78rem; color:var(--accent-blue); font-family:var(--font-mono);">(${escapeHtml(s.email)})</span>
+            <div style="font-size:0.74rem; color:var(--text-secondary);">
+              Dept: ${escapeHtml(s.department)} &bull; Country: ${escapeHtml(s.countries_filter)} &bull; Sector: ${escapeHtml(s.sectors_filter)}
+            </div>
+          </div>
+          <button type="button" style="padding:0.25rem 0.55rem; font-size:0.72rem; color:#fda4af;" onclick="removeSubscriber('${escapeHtml(s.email)}')">Remove</button>
+        </div>
+      `).join('') || '<p style="font-size:0.8rem; color:var(--text-secondary);">No colleagues subscribed yet.</p>';
+
+      document.getElementById('digestLogsContainer').innerHTML = logs.map(l => `
+        <div class="api-item">
+          <div style="display:flex; justify-content:space-between;">
+            <strong style="font-size:0.8rem;">${escapeHtml(l.subject)}</strong>
+            <span class="pill pill-uae">${escapeHtml(l.status)}</span>
+          </div>
+          <div style="font-size:0.74rem; color:var(--text-secondary);">
+            Recipients: ${escapeHtml((l.recipients || []).join(', '))} &bull; Items: ${l.items_count} &bull; Mode: ${escapeHtml(l.delivery_mode)}
+          </div>
+        </div>
+      `).join('') || '<p style="font-size:0.78rem; color:var(--text-secondary);">No weekly digests dispatched yet. Click "Dispatch Weekly Digest Now" to generate and send.</p>';
+    }
+
+    async function addColleagueSubscriber() {
+      const email = document.getElementById('subEmail').value.trim();
+      const full_name = document.getElementById('subName').value.trim() || 'Colleague';
+      const department = document.getElementById('subDept').value.trim() || 'Compliance';
+      const countries_filter = document.getElementById('subCountry').value;
+      const sectors_filter = document.getElementById('subSector').value;
+
+      if (!email.includes('@')) {
+        alert('Please enter a valid corporate email address.');
+        return;
+      }
+      await fetch('/api/v1/email-digest/subscribers', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, full_name, department, countries_filter, sectors_filter })
+      });
+      document.getElementById('subEmail').value = '';
+      document.getElementById('subName').value = '';
+      await loadEmailDigestTab();
+      await loadSystemStatus();
+    }
+
+    async function removeSubscriber(email) {
+      await fetch(`/api/v1/email-digest/subscribers?email=${encodeURIComponent(email)}`, { method: 'DELETE' });
+      await loadEmailDigestTab();
+      await loadSystemStatus();
+    }
+
+    async function dispatchWeeklyDigestNow() {
+      const jur = document.getElementById('subCountry').value;
+      const sec = document.getElementById('subSector').value;
+      const res = await fetch('/api/v1/email-digest/send-now', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ jurisdiction_filter: jur, sector_filter: sec })
+      });
+      const data = await res.json();
+      await loadEmailDigestTab();
+      window.open('/api/v1/email-digest/latest-preview', '_blank');
+    }
+
+    // --- Modals & Sync ---
+    function showRegulationDetail(index) {
+      const item = currentRegulations[index];
+      if (!item) return;
+      const obligations = (item.compliance_obligations || []).map(o => `<li style="margin-left:1.2rem; margin-bottom:0.35rem;">${escapeHtml(o)}</li>`).join('');
+      const body = document.getElementById('detailDialogBody');
+      body.innerHTML = `
+        <div>
+          <span class="pill pill-uae">${escapeHtml(item.region)} &bull; ${escapeHtml(item.jurisdiction)}</span>
+          <span class="pill pill-portable">${escapeHtml(item.sector)}</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1rem;">${escapeHtml(item.title)}</h3>
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-secondary);">
+          <strong>Issuing Authority:</strong> ${escapeHtml(item.issuing_authority)} &bull;
+          <strong>Standard / Type:</strong> ${escapeHtml(item.regulation_standard || item.document_type)} &bull;
+          <strong>Published:</strong> ${escapeHtml(item.publication_date)} &bull;
+          <strong>Enforcement:</strong> ${escapeHtml(item.enforcement_date)}
+        </div>
+        <div style="background: var(--bg-surface); padding: 0.85rem; border-radius: 8px; border: 1px solid var(--border-color);">
+          <strong>Factual Summary:</strong>
+          <p style="margin-top: 0.35rem; color: var(--text-secondary);">${escapeHtml(item.summary)}</p>
+        </div>
+        <div>
+          <strong>Actionable Compliance Obligations:</strong>
+          <ul style="margin-top: 0.4rem;">${obligations || '<li>N/A</li>'}</ul>
+        </div>
+      `;
+      document.getElementById('detailDialog').showModal();
+    }
+
+    async function pushToComplianceIQ() {
+      const jur = document.getElementById('filterJurisdiction').value;
+      const res = await fetch('/api/v1/compliance-iq/push', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ jurisdiction: jur })
+      });
+      const data = await res.json();
+      await loadSystemStatus();
+      alert(`Signed Feed Dispatched to Compliance IQ!\nRecords: ${data.records_dispatched}\nHMAC Signature: ${data.hmac_signature}\nStatus: ${data.delivery_status}`);
+    }
+
+    async function openStrictJsonModal() {
+      const params = getCurrentScopeParams();
+      document.getElementById('strictJsonDialog').showModal();
+      const res = await fetch(`/api/v1/export/strict-json?${params.toString()}`);
+      const data = await res.json();
+      document.getElementById('strictJsonPre').textContent = JSON.stringify(data, null, 2);
+    }
+
+    function copyStrictJson() {
+      navigator.clipboard.writeText(document.getElementById('strictJsonPre').textContent);
+    }
+
+    async function saveSchedulerConfig() {
+      const provider = document.getElementById('cfgLlmProvider').value;
+      const jurRaw = document.getElementById('cfgJurisdictions').value;
+      const interval = parseInt(document.getElementById('cfgInterval').value || '360', 10);
+      const webhook = document.getElementById('cfgWebhook').value;
+
+      const jurisdictions = jurRaw.split(',').map(s => s.trim()).filter(Boolean);
+      await fetch('/api/v1/scheduler/config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          enabled: true,
+          interval_minutes: interval,
+          active_jurisdictions: jurisdictions,
+          llm_provider: provider,
+          compliance_iq_webhook_url: webhook
+        })
+      });
+      await loadSystemStatus();
+      alert('AI Stack & Background Daemon Settings Saved.');
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await loadSystemStatus();
+      await loadRegulations();
+    });
+  </script>
+</body>
+</html>
